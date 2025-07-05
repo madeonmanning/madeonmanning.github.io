@@ -1,0 +1,80 @@
+.contact-form {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    padding: 2rem;
+    background-color: #fcfcfc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #4a5a41;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box; /* Include padding in width */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border-color: #a3b18a;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(163, 177, 138, 0.2);
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #4a5a41; /* Primary button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.submit-button:hover {
+    background-color: #3b4731;
+    transform: translateY(-1px);
+}
+
+.submit-button:active {
+    transform: translateY(0);
+}
+
+.email-direct {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: #6a6a6a;
+}
+
+.email-direct a {
+    color: #4a5a41;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.email-direct a:hover {
+    text-decoration: underline;
+}
