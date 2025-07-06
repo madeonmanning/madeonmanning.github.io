@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import Farmstand from './pages/Farmstand';
@@ -17,7 +17,7 @@ function GATracker() {
   useEffect(() => {
     // Check if gtag is available before trying to send data
     if (window.gtag) {
-      window.gtag('config', 'YOUR_GA4_MEASUREMENT_ID', {
+      window.gtag('config', 'G-BY0H0G1CQK', {
         'page_path': location.pathname + location.search,
         'page_title': document.title
       });
