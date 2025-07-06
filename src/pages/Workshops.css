@@ -1,0 +1,193 @@
+/* src/pages/Workshops.css */
+
+.workshops-page {
+    text-align: center;
+}
+
+.workshops-page .intro-text {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+    color: #5a5a5a;
+}
+
+.workshop-highlight {
+    background-color: #fafafa;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 3rem;
+    text-align: left; /* Align text within the highlight section */
+}
+
+.workshop-highlight .workshop-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2rem;
+    align-items: flex-start; /* Align content to the top */
+}
+
+.workshop-highlight .workshop-image {
+    flex: 1; /* Allow image to grow/shrink */
+    min-width: 300px; /* Minimum width before stacking */
+    max-width: 500px; /* Limit image size */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ensures image covers area without distortion */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.workshop-highlight .workshop-details {
+    flex: 2; /* Allow details section to take more space */
+    min-width: 300px; /* Minimum width before stacking */
+}
+
+.workshop-highlight h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4a5a41;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.workshop-highlight ul {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #5a5a5a;
+}
+
+.workshop-highlight ul li {
+    margin-bottom: 0.5rem;
+    background: none; /* Override PageDefaults.css list item background */
+    border-left: none; /* Override PageDefaults.css list item border */
+    box-shadow: none; /* Override PageDefaults.css list item shadow */
+    padding: 0; /* Override PageDefaults.css list item padding */
+}
+
+.workshop-highlight ul ul { /* Nested list for 'What you'll learn' */
+    list-style: circle;
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.workshop-cta-button {
+    display: inline-block;
+    background-color: #a3b18a; /* Soft green button */
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.workshop-cta-button:hover {
+    background-color: #8c9d72;
+    transform: translateY(-1px);
+}
+
+
+.upcoming-workshops {
+    padding: 2rem 0;
+}
+
+.upcoming-workshops .sub-intro {
+    max-width: 700px;
+    margin: 0 auto 2.5rem auto;
+    color: #6a6a6a;
+}
+
+.workshop-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.workshop-card {
+    background-color: #fefefe;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack content inside card */
+}
+
+.workshop-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #4a5a41;
+    font-size: 1.6rem;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+}
+
+.workshop-card .card-image {
+    max-width: 100%;
+    height: 200px; /* Fixed height for consistency */
+    object-fit: cover; /* Crop image to fit */
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+.workshop-card p {
+    color: #6a6a6a;
+    flex-grow: 1; /* Pushes button to bottom if content varies */
+}
+
+.workshop-card .card-cta {
+    display: inline-block;
+    margin-top: 1.5rem;
+    background-color: #e0ddd9; /* Lighter button for secondary CTAs */
+    color: #4a5a41;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.workshop-card .card-cta:hover {
+    background-color: #d1cbc2;
+    color: #3b4731;
+}
+
+.inquire-note {
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    color: #5a5a5a;
+}
+
+.inquire-note a {
+    color: #4a5a41;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.inquire-note a:hover {
+    text-decoration: none;
+}
+
+
+/* Responsive adjustments for Workshops page */
+@media (max-width: 768px) {
+    .workshop-highlight .workshop-content {
+        flex-direction: column; /* Stack image and details */
+        align-items: center; /* Center items when stacked */
+    }
+    .workshop-highlight .workshop-image {
+        min-width: unset; /* Remove min-width to allow full flexibility */
+        max-width: 100%;
+    }
+    .workshop-highlight .workshop-details {
+        min-width: unset;
+        text-align: center;
+    }
+    .workshop-highlight ul {
+        text-align: left; /* Keep lists left-aligned */
+        padding-left: 1rem;
+        width: 100%; /* Ensure lists take full width */
+    }
+}
