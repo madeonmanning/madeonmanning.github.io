@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './PageDefaults.css'; // For general page styling like titles and sections
 import './Workshops.css';    // For specific workshop page styling
 

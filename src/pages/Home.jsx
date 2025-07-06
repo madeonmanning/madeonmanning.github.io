@@ -2,10 +2,7 @@ import React from 'react';
 import './Home.css'; // Optional: for specific Home page styles
 
 function Home() {
-  // Get the base URL from Vite's environment variables
-  // This ensures it works correctly both locally and on GitHub Pages
-  const baseURL = import.meta.env.BASE_URL;
-
+  
   return (
     <div className="page-section home-page">
       <h1 className="page-title">Welcome to Made on Manning</h1>
@@ -17,7 +14,7 @@ function Home() {
         how we can bring a touch of handmade charm to your life.
       </p>
       {/* Add more content, images, call-to-actions here */}
-      <img src={`${baseURL}manning-hero.jpg`} alt="Made on Manning Hero" className="hero-image" />
+      <img src="/manning-hero.jpg" alt="Made on Manning Hero" className="hero-image" />
       <div className="section-grid">
         <div className="grid-item">
           <h2>Our Bakery</h2>
