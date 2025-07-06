@@ -10,9 +10,27 @@ import ContactUs from './pages/ContactUs';
 
 import './App.css'; // You can keep this for general app-wide styles
 
+// Helper component to track route changes
+function GATracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    // Check if gtag is available before trying to send data
+    if (window.gtag) {
+      window.gtag('config', 'YOUR_GA4_MEASUREMENT_ID', {
+        'page_path': location.pathname + location.search,
+        'page_title': document.title
+      });
+    }
+  }, [location]); // Re-run this effect whenever the location changes
+
+  return null; // This component doesn't render anything visible
+}
+
 function App() {
   return (
     <Router>
+      <GATracker />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />

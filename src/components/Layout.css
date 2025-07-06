@@ -7,7 +7,7 @@
 
 .site-header {
     background-color: #f8f5f0; /* Light, earthy background, similar to examples */
-    padding: 1.5rem 2rem;
+    padding: 0rem 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     border-bottom: 1px solid #e0ddd9; /* Subtle border */
 }
@@ -28,6 +28,15 @@
     color: #4a5a41; /* Muted green/brown, earthy tone */
     text-decoration: none;
     padding: 0.5rem 0;
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Vertically align image and text */
+    gap: 0.5rem; /* Space between logo image and text */
+}
+
+.site-logo-image {
+    height: 40px; /* Adjust as needed for your logo's size */
+    width: auto; /* Maintain aspect ratio */
+    /* You might want to add a small margin if the gap isn't enough, e.g., margin-right: 0.25rem; */
 }
 
 .main-nav ul {

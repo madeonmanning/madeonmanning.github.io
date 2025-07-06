@@ -7,7 +7,10 @@ function Layout({ children }) {
     <div className="layout-container">
       <header className="site-header">
         <div className="header-content">
-          <Link to="/" className="site-logo">Made on Manning</Link>
+          <Link to="/" className="site-logo">
+            <img src={"/favicon-96x96.png"} alt="Made on Manning Logo" className="site-logo-image" />
+            Made on Manning
+          </Link>
           <nav className="main-nav">
             <ul>
               <li><Link to="/farmstand">Farmstand</Link></li>
