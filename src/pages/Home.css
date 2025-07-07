@@ -4,8 +4,9 @@
 /* Add custom styles for your carousel images if needed */
 .carousel-image {
     width: 100%;
-    height: auto;
+    height: 400px; /* Fixed height */
     object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 8px;
 }
 
 .home-page {

@@ -18,10 +18,13 @@ function Home() {
 
   // Define your images
   const images = [
-    { id: 1, src: '/manning-hero.jpg', alt: 'Made on Manning Hero' }, // Your existing image
-    { id: 2, src: 'https://via.placeholder.com/800x400/FF5733/FFFFFF?text=Bakery+Delights', alt: 'Bakery Items' },
-    { id: 3, src: 'https://via.placeholder.com/800x400/33FF57/FFFFFF?text=Fresh+Flowers', alt: 'Fresh Flowers' },
-    { id: 4, src: 'https://via.placeholder.com/800x400/3357FF/FFFFFF?text=Woodworking+Projects', alt: 'Woodworking' },
+    { id: 1, src: '/home-slider-1.jpg', alt: 'Farmstand' },
+    { id: 2, src: '/home-slider-2.jpg', alt: 'Flowers' },
+    { id: 3, src: '/home-slider-3.jpg', alt: 'Sourdough Bread' },
+    { id: 4, src: '/home-slider-4.jpg', alt: 'Making Cinnamon Rolls' },
+    { id: 5, src: '/home-slider-5.jpg', alt: 'Baking Cookies' },
+    { id: 6, src: '/home-slider-6.jpg', alt: 'Frosted Cinnamon Rolls' },
+    { id: 7, src: '/home-slider-7.jpg', alt: 'Jams' },
   ];
 
   return (
@@ -57,7 +60,7 @@ function Home() {
         </div>
         <div className="grid-item">
           <h2>Other Projects</h2>
-          <p>Woodworking, bee-keeping, pottery, and more.</p>
+          <p>Woodworking, beekeeping, pottery, and more.</p>
         </div>
       </div>
     </div>

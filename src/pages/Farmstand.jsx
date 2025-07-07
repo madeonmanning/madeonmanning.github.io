@@ -1,6 +1,6 @@
 import React from 'react';
 import './PageDefaults.css'; // Reusing common page styles
-import FAQItem from './components/FAQItem';
+import FAQItem from '../components/FAQItem';
 
 function Farmstand() {
 // Array of your FAQ data
