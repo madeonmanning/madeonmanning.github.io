@@ -1,0 +1,101 @@
+.faq-section-title {
+  font-family: 'Playfair Display', serif;
+  color: #4a5a41;
+  font-size: 2rem;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.faq-list {
+  max-width: 800px; /* Constrain FAQ list width */
+  margin: 0 auto 3rem auto; /* Center list and add bottom margin */
+  border: 1px solid #e0ddd9;
+  border-radius: 8px;
+  overflow: hidden; /* Ensures border-radius applies to first/last item */
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0ddd9; /* Separator between FAQ items */
+}
+
+.faq-item:last-child {
+  border-bottom: none; /* No border for the last item */
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  background-color: #fcfaf8; /* Slightly off-white background */
+  border: none;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #4a5a41; /* Question text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: #f0ede8; /* Lighter background on hover */
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  margin-left: 1rem;
+  color: #6a6a6a; /* Icon color */
+  transition: transform 0.3s ease;
+}
+
+.faq-question[aria-expanded="true"] .faq-icon {
+  transform: rotate(0deg); /* No rotation for minus sign */
+}
+
+.faq-answer {
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
+  background-color: #fff; /* White background for answer */
+  font-family: 'Inter', sans-serif;
+  color: #6a6a6a;
+  line-height: 1.6;
+  text-align: left;
+  /* Add animation for smooth reveal */
+  animation: fadeIn 0.3s ease-out;
+}
+
+.faq-answer p {
+  margin-bottom: 0.5rem; /* Space between answer paragraphs */
+}
+
+.faq-answer p:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Basic Responsive Adjustments */
+@media (max-width: 768px) {
+  .faq-section-title {
+    font-size: 1.8rem;
+  }
+  .faq-question {
+    font-size: 1rem;
+    padding: 1rem 1.2rem;
+  }
+  .faq-answer {
+    padding: 0.8rem 1.2rem 1.2rem 1.2rem;
+  }
+}

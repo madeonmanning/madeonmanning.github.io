@@ -19,7 +19,7 @@ function GATracker() {
     if (window.gtag) {
       window.gtag('config', 'G-BY0H0G1CQK', {
         'page_path': location.pathname + location.search,
-        'page_title': document.title
+        'page_title': document.path
       });
     }
   }, [location]); // Re-run this effect whenever the location changes

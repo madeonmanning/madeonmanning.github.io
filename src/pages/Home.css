@@ -1,3 +1,13 @@
+@import "/node_modules/slick-carousel/slick/slick.css";
+@import "/node_modules/slick-carousel/slick/slick-theme.css";
+
+/* Add custom styles for your carousel images if needed */
+.carousel-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
 .home-page {
     text-align: center;
 }
