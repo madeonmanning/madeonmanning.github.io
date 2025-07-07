@@ -28,20 +28,20 @@
 }
 
 /* Basic List Styling */
-.page-section ul {
+/*.page-section ul {
     list-style: none;
     padding-left: 0;
     margin-top: 1.5rem;
-}
+}*/
 
-.page-section ul li {
+/*.page-section ul li {
     background-color: #fcfcfc;
     border-left: 3px solid #a3b18a; /* Accent border */
-    padding: 1rem 1.5rem;
+    /*padding: 1rem 1.5rem;
     margin-bottom: 1rem;
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.04);
-}
+}*/
 
 .page-section h3 {
     font-family: 'Playfair Display', serif;
