@@ -13,6 +13,7 @@ function Home() {
     autoplay: true,      // Enable automatic sliding
     autoplaySpeed: 3000, // Time between slides in milliseconds (3 seconds)
     arrows: true,        // Show navigation arrows (next/prev)
+    pauseOnHover: true,
     // You can add more settings as needed: https://react-slick.neostack.com/docs/example/
   };
 

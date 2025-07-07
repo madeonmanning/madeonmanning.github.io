@@ -1,5 +1,5 @@
-@import "/node_modules/slick-carousel/slick/slick.css";
-@import "/node_modules/slick-carousel/slick/slick-theme.css";
+@import "../../node_modules/slick-carousel/slick/slick.css";
+@import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
 /* Styles for the carousel container */
 .carousel-container {
@@ -7,7 +7,7 @@
     margin: 2rem auto; /* Center the carousel and add vertical margin */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* More pronounced shadow for the carousel */
-    overflow: hidden; /* Ensures rounded corners are applied to images too */
+    /*overflow: hidden; /* Ensures rounded corners are applied to images too */
 }
 
 /* Styles for images within the carousel */
@@ -16,6 +16,7 @@
     height: 400px; /* Fixed height for consistency, adjust as needed */
     object-fit: cover; /* Ensures images cover the area without distortion */
     border-radius: 8px; /* Apply rounded corners to images within the carousel */
+    display: block;
 }
 
 /* Override default slick-carousel arrow styles for better visibility and branding */
@@ -45,6 +46,14 @@
 
 .slick-dots li.slick-active button:before {
     color: #4a5a41 !important; /* Active dot color */
+}
+
+.slick-list,
+.slick-track {
+    line-height: 0; /* Collapse any line-height space */
+    font-size: 0; /* Collapse any font-size space */
+    padding: 0 !important; /* Ensure no unexpected padding */
+    margin: 0 !important; /* Ensure no unexpected margin */
 }
 
 .home-page {
