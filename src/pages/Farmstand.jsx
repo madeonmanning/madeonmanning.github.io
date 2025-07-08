@@ -1,5 +1,5 @@
 import React from 'react';
-import './PageDefaults.css'; // Reusing common page styles
+import './Farmstand.css';
 import FAQItem from '../components/FAQItem';
 
 function Farmstand() {
@@ -8,17 +8,17 @@ function Farmstand() {
     {
       id: 1,
       question: 'Where are you located?',
-      answer: 'The farmstand is located at the end of our driveway at 910 Manning Ave. S. Woodbury MN'
+      answer: 'The farmstand is located at the end of our driveway at 910 Manning Avenue South, Woodbury, MN.'
     },
     {
       id: 2,
       question: 'When are you open?',
-      answer: 'The farmstand is out on Fridays throughout summer. We open at 9AM and are typically out until 5 (unless sold out sooner).'
+      answer: 'The farmstand is out on Fridays throughout summer. We open at 9am and are typically out until 5pm (unless sold out sooner).'
     },
     {
       id: 3,
       question: 'How do I pay?',
-      answer: 'The farmstand runs on honor system. There is no one there to collect payment but there is an option to drop cash in a locked cash box or my venmo QR code is posted.'
+      answer: 'The farmstand runs on honor system. There is no one there to collect payment, but there is an option to drop cash in a locked cash box or use my Venmo QR code (<a href="https://account.venmo.com/u/madeonmanning" target="_blank" rel="noopener noreferrer">@madeonmanning</a>) is posted.'
     },
     {
       id: 4,
@@ -60,18 +60,30 @@ function Farmstand() {
   return (
     <div className="page-section farmstand-page">
       <h1 className="page-title">Our Weekly Farmstand</h1>
-      <p>
-        During the summer months of June through September join us at our home on Manning Avenue South in
-        Woodbury, MN, for a delightful selection of homemade sourdough, fresh baked goods, and seasonal flowers.
-        Our farmstand is a celebration of local ingredients and handmade quality.
-      </p>
-      <p>
-        Our menu changes week to week, but you can expect to find an assortment of sourdough breads, pastries, cookies, and more from the bakery.
-        Our flower summer bouquets will feature the freshest blooms from our garden.
-        You might also find other homegrown or handcrafted items such as honey, maple syrup, or jams (depending on season).
-      </p>
+      
+      <div className="farmstand-intro-content">
+        <img
+          src="/farmstand-intro.jpg"
+          alt="Farmstand setup with flowers and bread"
+          className="farmstand-intro-image"
+        />
+        <div className="farmstand-intro-text">
+          <p>
+            During the summer months of June through September join us at our home on Manning Avenue South in
+            Woodbury, MN, for a delightful selection of homemade sourdough, fresh baked goods, and seasonal flowers.
+            Our farmstand is a celebration of local ingredients and handmade quality.
+          </p>
+          <p>
+            Our menu changes week to week, but you can expect to find an assortment of sourdough breads, pastries, cookies, and more from the bakery.
+            Our flower summer bouquets will feature the freshest blooms from our garden.
+            You might also find other homegrown or handcrafted items such as honey, maple syrup, or jams (depending on season).
+          </p>
+          <p>
+            <a href="https://www.instagram.com/made_on_manning" target="_blank" rel="noopener noreferrer">Follow us on Instagram</a> for weekly updates on what's available!
+          </p>
+        </div>
+      </div>
 
-      {/* New FAQ Section */}
       <h3 className="faq-section-title">Frequently Asked Questions</h3>
       <div className="faq-list">
         {faqs.map(faq => (
@@ -79,7 +91,6 @@ function Farmstand() {
         ))}
       </div>
 
-      <p>Follow us on Instagram for weekly updates on what's available!</p>
     </div>
   );
 }

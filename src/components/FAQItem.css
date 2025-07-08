@@ -67,6 +67,18 @@
   animation: fadeIn 0.3s ease-out;
 }
 
+.faq-answer a {
+  color: #a3b18a; /* A distinct color for links, e.g., a lighter green from your palette */
+  text-decoration: underline; /* Underline links */
+  font-weight: 600; /* Make links a bit bolder */
+  transition: color 0.3s ease;
+}
+
+.faq-answer a:hover {
+  color: #4a5a41; /* Darker green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
 .faq-answer p {
   margin-bottom: 0.5rem; /* Space between answer paragraphs */
 }

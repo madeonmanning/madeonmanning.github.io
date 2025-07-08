@@ -17,10 +17,8 @@ function FAQItem({ question, answer }) {
       </button>
       {isOpen && (
         <div className="faq-answer">
-          {/* Render answer content, handling paragraphs/breaks */}
-          {answer.split('\n').map((paragraph, index) => (
-            <p key={index}>{paragraph}</p>
-          ))}
+          {/* Render answer content using dangerouslySetInnerHTML to allow HTML */}
+          <div dangerouslySetInnerHTML={{ __html: answer }} />
         </div>
       )}
     </div>

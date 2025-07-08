@@ -8,8 +8,6 @@
     margin: 2rem auto; /* Center the carousel and add vertical margin */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* More pronounced shadow for the carousel */
-    box-sizing: border-box; /* Ensures padding is included in the width calculation */
-    padding: 0 15px; /* Adds horizontal padding on all screen sizes to prevent touching edges */
 }
 
 /* Styles for images within the carousel */

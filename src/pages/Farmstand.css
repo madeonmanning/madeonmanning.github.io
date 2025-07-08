@@ -1,0 +1,55 @@
+.farmstand-intro-content {
+    display: flex; /* Enable flexbox */
+    align-items: flex-start; /* Align items to the top */
+    gap: 2rem; /* Space between the image and text */
+    max-width: 1000px; /* Limit content width */
+    margin: 0 auto 3rem auto; /* Center and add bottom margin */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.farmstand-intro-image {
+    flex: 0 0 300px; /* Don't grow, don't shrink, base width 300px */
+    max-width: 500px; /* Ensure it doesn't overflow its flex item */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    object-fit: cover; /* Crop image if necessary to fit */
+    display: block; /* Remove extra space below image */
+}
+
+.farmstand-intro-text {
+    flex: 1; /* Allows text to grow and shrink */
+    min-width: 300px; /* Ensure text doesn't get too narrow before wrapping */
+}
+
+.farmstand-intro-text a {
+  color: #a3b18a; /* A distinct color for links, e.g., a lighter green from your palette */
+  text-decoration: underline; /* Underline links */
+  font-weight: 600; /* Make links a bit bolder */
+  transition: color 0.3s ease;
+}
+
+.farmstand-intro-text a:hover {
+  color: #4a5a41; /* Darker green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+/* Responsive adjustments for the intro content */
+@media (max-width: 768px) {
+    .farmstand-intro-content {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items when stacked */
+        gap: 1.5rem;
+    }
+
+    .farmstand-intro-image {
+        flex: none; /* Remove flex sizing when stacked */
+        width: 80%; /* Adjust width for mobile */
+        max-width: 400px; /* Max width for image on mobile */
+    }
+
+    .farmstand-intro-text {
+        min-width: unset; /* Remove min-width when stacked */
+        text-align: center; /* Center text when stacked */
+    }
+}
