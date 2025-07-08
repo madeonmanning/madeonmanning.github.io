@@ -4,10 +4,12 @@
 /* Styles for the carousel container */
 .carousel-container {
     max-width: 900px; /* Adjust max-width as needed */
+    width: 100%;
     margin: 2rem auto; /* Center the carousel and add vertical margin */
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* More pronounced shadow for the carousel */
-    /*overflow: hidden; /* Ensures rounded corners are applied to images too */
+    box-sizing: border-box; /* Ensures padding is included in the width calculation */
+    padding: 0 15px; /* Adds horizontal padding on all screen sizes to prevent touching edges */
 }
 
 /* Styles for images within the carousel */
@@ -58,14 +60,6 @@
 
 .home-page {
     text-align: center;
-}
-
-.home-page .hero-image {
-    max-width: 100%;
-    height: auto;
-    margin: 2rem 0;
-    border-radius: 8px; /* Soften edges */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .section-grid {

@@ -27,6 +27,15 @@
     bottom: 0;
 }
 
+.hero-image {
+    max-width: 100%; /* Ensures image is responsive and doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any extra space below the image */
+    margin: 2rem auto; /* Centers the image and adds vertical spacing */
+    border-radius: 8px; /* Soften edges */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
 /* Basic List Styling */
 /*.page-section ul {
     list-style: none;

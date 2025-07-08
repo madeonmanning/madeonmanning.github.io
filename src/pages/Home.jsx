@@ -11,7 +11,7 @@ function Home() {
     slidesToShow: 1,     // Number of slides to show at once
     slidesToScroll: 1,   // Number of slides to scroll when navigating
     autoplay: true,      // Enable automatic sliding
-    autoplaySpeed: 3000, // Time between slides in milliseconds (3 seconds)
+    autoplaySpeed: 5000, // Time between slides in milliseconds (3 seconds)
     arrows: true,        // Show navigation arrows (next/prev)
     pauseOnHover: true,
     // You can add more settings as needed: https://react-slick.neostack.com/docs/example/
@@ -40,7 +40,7 @@ function Home() {
       </p>
 
       {/* Image Carousel */}
-      <div className="carousel-container"> {/* Add a wrapper div for styling if needed */}
+      <div className="carousel-container">
         <Slider {...settings}>
           {images.map(image => (
             <div key={image.id}>

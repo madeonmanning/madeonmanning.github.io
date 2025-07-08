@@ -79,6 +79,7 @@
 .site-content {
     flex-grow: 1; /* Pushes footer to the bottom */
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem; /* Consistent padding for page content */
 }
