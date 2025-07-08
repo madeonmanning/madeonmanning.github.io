@@ -23,7 +23,7 @@ function Farmstand() {
     {
       id: 4,
       question: 'What do you have available?',
-      answer: 'The menu changes each week. You will typically find some quintessential staples such as flowers, sourdough bread, & jam but you will also find seasonal specials made with ingredients grown right here at our home. (If you are looking for insider information about what will be available that week the best place to check is on my Instagram stories.)'
+      answer: 'The menu changes each week. You will typically find some quintessential staples such as flowers, sourdough bread, and jam but you will also find seasonal specials made with ingredients grown right here at our home. <i>(If you are looking for insider information about what will be available that week the best place to check is on <a href="https://www.instagram.com/made_on_manning" target="_blank" rel="noopener noreferrer">my Instagram stories</a>.)</i>'
     },
     {
       id: 5,
@@ -33,12 +33,12 @@ function Farmstand() {
     {
       id: 6,
       question: 'What ingredients do you use?',
-      answer: 'I always do my best to choose high quality ingredients.\n\n>>All the flour used in my baked goods is organic which means it is unbleached and free from synthetic pesticides and fertilizers. I also do some baking with freshly milled grains.\n>>None of the baked goods I sell at the farmstand have any artificial colors in them so even your fun festive sugar cookies or delicious “M&M” cookies are made with dye free ingredients.'
+      answer: 'I always do my best to choose high quality ingredients.<br/><br/>>>All the flour used in my baked goods is organic which means it is unbleached and free from synthetic pesticides and fertilizers. I bake with some freshly milled organic grains.<br/><br/>>>None of the baked goods I sell at the farmstand have any artificial colors in them - even your fun, festive sugar cookies or delicious “M&M” cookies are made with dye-free ingredients.'
     },
     {
       id: 7,
-      question: 'Do you sell Gluten Free Baked goods?',
-      answer: 'While I do have a few tried and true favorite GF bakes I make for family and friends, I have chosen not to sell any specific GF baked goods at the farmstand at this time. Because of all the baking I do on bake days and all the flour that is undoubtedly present, I do not want to risk any cross contamination for people where that might be a risk or an issue.'
+      question: 'Do you sell gluten-free baked goods?',
+      answer: 'While I do have a few tried and true favorite gluten-free bakes I make for family and friends, I have chosen not to sell any specific gluten-free baked goods at the farmstand at this time. Because of all the baking I do on bake days and all the flour that is undoubtedly present, I do not want to risk any cross contamination for people where that might be a risk or an issue.'
     },
     {
       id: 8,
