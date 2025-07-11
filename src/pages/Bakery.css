@@ -150,6 +150,10 @@
     display: block;
 }
 
+.slick-dots {
+    bottom: -2em;
+}
+
 /* Responsive adjustments for Bakery page */
 @media (max-width: 768px) {
     .bakery-category .category-content,
@@ -170,8 +174,12 @@
         text-align: left; /* Keep lists left-aligned even when rest of content is centered */
         padding-left: 1.5rem;
         width: 100%;
-        max-width: 400px; /* Limit list width */
+        /*max-width: 400px;*/ /* Limit list width */
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .slick-dots {
+        text-align: center !important;
     }
 }

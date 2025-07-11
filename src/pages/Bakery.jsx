@@ -13,9 +13,9 @@ function Bakery() {
     slidesToShow: 1,     // Number of slides to show at once
     slidesToScroll: 1,   // Number of slides to scroll when navigating
     autoplay: true,      // Enable automatic sliding
-    autoplaySpeed: 5000, // Time between slides in milliseconds (3 seconds)
-    arrows: false,        // Show navigation arrows (next/prev)
-    pauseOnHover: true,
+    autoplaySpeed: 3000, // Time between slides in milliseconds (3 seconds)
+    arrows: true,        // Show navigation arrows (next/prev)
+    pauseOnHover: false,
     // You can add more settings as needed: https://react-slick.neostack.com/docs/example/
   };
 
@@ -28,6 +28,25 @@ function Bakery() {
     { id: 5, src: '/sugar-cookie-5.jpg', alt: 'Baby Sugar Cookies' },
     { id: 6, src: '/sugar-cookie-6.jpg', alt: 'Home Sugar Cookies' },
     { id: 7, src: '/sugar-cookie-7.jpg', alt: 'Vegetable Sugar Cookies' },
+    { id: 8, src: '/sugar-cookie-8.jpg', alt: 'Flower Pot Sugar Cookies' },
+    { id: 9, src: '/sugar-cookie-9.jpg', alt: 'Flower Sugar Cookies' },
+    { id: 10, src: '/sugar-cookie-10.jpg', alt: 'Flower Bouquet Sugar Cookies' },
+  ];
+
+  const cupcake_images = [
+    { id: 1, src: '/cupcake-1.jpg', alt: 'Chocolate Heart Cupcakes' },
+    { id: 2, src: '/cupcake-2.jpg', alt: 'Galaxy Sprinkle Chocolate Cupcakes' },
+    { id: 3, src: '/cupcake-3.jpg', alt: 'Lemon Raspberry, Carrot Cake, and Chocolate Cupcakes' },
+    { id: 4, src: '/cupcake-4.jpg', alt: 'Pie Decorated Cupcakes' },
+    { id: 5, src: '/cupcake-5.jpg', alt: 'Dog Decorated Cupcakes' },
+    { id: 6, src: '/cupcake-6.jpg', alt: 'Baby Bow Cupcakes' },
+    { id: 7, src: '/cupcake-7.jpg', alt: 'Cupcakes matching a wedding cake' },
+  ];
+
+  const bulk_baking_images = [
+    { id: 1, src: '/bulk-baking-1.jpg', alt: 'Bulk Sourdough Bread' },
+    { id: 2, src: '/bulk-baking-2.jpg', alt: 'Organic Pasture-Raised Eggs' },
+    { id: 3, src: '/bulk-baking-3.jpg', alt: 'Bulk Sourdough Bread' },
   ];
 
 
@@ -77,7 +96,16 @@ function Bakery() {
       <section className="bakery-category inverted-layout"> {/* Added inverted-layout class */}
         <h2 className="section-heading">Cupcakes</h2>
         <div className="category-content">
-          <img src="/bakery-cupcakes.jpg" alt="Decorated Cookies" className="category-image" />
+          <div className="bakery-carousel-container">
+            <Slider {...settings}>
+              {cupcake_images.map(image => (
+                <div key={image.id}>
+                  <img src={image.src} alt={image.alt} className="bakery-carousel-image" />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
           <div className="category-details">
             <p>
               Order unique, beautiful, custom cupcakes for your next event baked with the best available ingredients.
@@ -102,7 +130,16 @@ function Bakery() {
       <section className="bakery-category">
         <h2 className="section-heading">Bulk Ordering</h2>
         <div className="category-content">
-          <img src="/bakery-cakes.jpg" alt="Pastries and Desserts" className="category-image" />
+          <div className="bakery-carousel-container">
+            <Slider {...settings}>
+              {bulk_baking_images.map(image => (
+                <div key={image.id}>
+                  <img src={image.src} alt={image.alt} className="bakery-carousel-image" />
+                </div>
+              ))}
+            </Slider>
+          </div>
+
           <div className="category-details">
             <p>
               Love our weekly farmstand offerings but looking for a larger quantity for a special event? We have bulk ordering available!

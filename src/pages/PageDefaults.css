@@ -73,12 +73,16 @@
 
 /* Adjust arrow positioning */
 .slick-prev {
-    left: 15px !important; /* Move left arrow slightly inside */
+    left: 5px !important; /* Move left arrow slightly inside */
+    width: 30px !important;
+    height: 30px !important;
     z-index: 1; /* Ensure arrows are above images */
 }
 
 .slick-next {
-    right: 15px !important; /* Move right arrow slightly inside */
+    right: 5px !important; /* Move right arrow slightly inside */
+    width: 30px !important;
+    height: 30px !important;
     z-index: 1;
 }
 
