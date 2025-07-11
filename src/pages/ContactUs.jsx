@@ -3,13 +3,21 @@ import './PageDefaults.css'; // Reusing common page styles
 import './ContactUs.css'; // Specific styles for the form
 
 function ContactUs() {
+  // State to manage form data
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    topic: 'General Inquiry', // Added topic with a default value
     subject: '',
     message: '',
   });
 
+  // State to manage submission feedback (success/error messages)
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  // State to manage loading indicator during submission
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Handles changes to form input fields and updates the formData state
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -18,19 +26,57 @@ function ContactUs() {
     }));
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // In a real application, you would send this data to a backend server
-    // For now, let's just log it to the console
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! We will get back to you soon.');
-    // You might want to clear the form after submission
-    setFormData({
-      name: '',
-      email: '',
-      subject: '',
-      message: '',
-    });
+  // Handles the form submission
+  const handleSubmit = async (e) => {
+    e.preventDefault(); // Prevent default browser form submission
+
+    setIsLoading(true); // Set loading state to true
+    setSubmissionStatus(null); // Clear previous submission status
+
+    // Concatenate topic and subject for the custom _subject field
+    const fullSubject = `${formData.topic}: ${formData.subject}`;
+
+    // Create a FormData object to send to FormSubmit.co
+    // This is necessary because FormSubmit.co expects traditional form data
+    const dataToSend = new FormData();
+    dataToSend.append('name', formData.name);
+    dataToSend.append('email', formData.email);
+    dataToSend.append('topic', formData.topic);
+    dataToSend.append('subject', formData.subject);
+    dataToSend.append('message', formData.message);
+    dataToSend.append('_subject', fullSubject); // Dynamic _subject
+    dataToSend.append('_captcha', 'false'); // Disable captcha for FormSubmit.co
+
+    try {
+      // Send the form data to FormSubmit.co using fetch
+      const response = await fetch("https://formsubmit.co/443b1077a09ebce89f8950b9fb77b52d", {
+        method: "POST",
+        body: dataToSend,
+      });
+
+      // FormSubmit.co typically redirects or returns a 200 OK.
+      // We check if the response was successful (status 2xx)
+      if (response.ok) {
+        setSubmissionStatus({ type: 'success', message: 'Thank you for your message! We will get back to you soon.' });
+        // Clear the form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          topic: 'General Inquiry', // Reset topic to default
+          subject: '',
+          message: '',
+        });
+      } else {
+        // Handle cases where FormSubmit.co might return an error status
+        setSubmissionStatus({ type: 'error', message: 'There was an error sending your message. Please try again.' });
+      }
+    } catch (error) {
+      // Catch network errors or other issues during the fetch request
+      console.error('Submission error:', error);
+      setSubmissionStatus({ type: 'error', message: 'A network error occurred. Please check your connection and try again.' });
+    } finally {
+      setIsLoading(false); // Set loading state to false
+    }
   };
 
   return (
@@ -52,6 +98,7 @@ function ContactUs() {
             value={formData.name}
             onChange={handleChange}
             required
+            className="rounded-md"
           />
         </div>
 
@@ -64,7 +111,25 @@ function ContactUs() {
             value={formData.email}
             onChange={handleChange}
             required
+            className="rounded-md"
           />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="topic">Topic:</label>
+          <select
+            id="topic"
+            name="topic"
+            value={formData.topic}
+            onChange={handleChange}
+            required
+            className="rounded-md"
+          >
+            <option value="General Inquiry">General Inquiry</option>
+            <option value="Custom Baked Goods">Custom Baked Goods</option>
+            <option value="Rentals">Rentals</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
 
         <div className="form-group">
@@ -76,6 +141,7 @@ function ContactUs() {
             value={formData.subject}
             onChange={handleChange}
             required
+            className="rounded-md"
           />
         </div>
 
@@ -88,11 +154,25 @@ function ContactUs() {
             value={formData.message}
             onChange={handleChange}
             required
+            className="rounded-md"
           ></textarea>
         </div>
 
-        <button type="submit" className="submit-button">Send Message</button>
+        <button
+          type="submit"
+          className="submit-button rounded-md"
+          disabled={isLoading} // Disable button while submitting
+        >
+          {isLoading ? 'Sending...' : 'Send Message'}
+        </button>
       </form>
+
+      {/* Display submission status messages */}
+      {submissionStatus && (
+        <div className={`submission-message ${submissionStatus.type === 'success' ? 'text-green-600' : 'text-red-600'} p-3 mb-4 rounded-md`}>
+          {submissionStatus.message}
+        </div>
+      )}
 
       <p className="email-direct">
         You can also email us directly at: <a href="mailto:madeonmanning@gmail.com">madeonmanning@gmail.com</a>
