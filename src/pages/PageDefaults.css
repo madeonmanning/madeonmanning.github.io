@@ -59,3 +59,48 @@
     margin-top: 2rem;
     margin-bottom: 1.5rem;
 }
+
+
+
+
+/* Override default slick-carousel arrow styles for better visibility and branding */
+/* Using !important to ensure these styles take precedence over slick's default styles */
+.slick-prev:before,
+.slick-next:before {
+    color: #fff !important; /* Change arrow color to match your theme */
+    font-size: 30px !important; /* Make arrows larger */
+}
+
+/* Adjust arrow positioning */
+.slick-prev {
+    left: 15px !important; /* Move left arrow slightly inside */
+    z-index: 1; /* Ensure arrows are above images */
+}
+
+.slick-next {
+    right: 15px !important; /* Move right arrow slightly inside */
+    z-index: 1;
+}
+
+/* Style for the navigation dots */
+.slick-dots li button:before {
+    font-size: 12px !important; /* Adjust dot size */
+    color: #888 !important; /* Default dot color */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #4a5a41 !important; /* Active dot color */
+}
+
+.slick-dots {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.slick-list,
+.slick-track {
+    line-height: 0; /* Collapse any line-height space */
+    font-size: 0; /* Collapse any font-size space */
+    padding: 0 !important; /* Ensure no unexpected padding */
+    margin: 0 !important; /* Ensure no unexpected margin */
+}

@@ -1,5 +1,3 @@
-/* src/pages/Bakery.css */
-
 .bakery-page {
     text-align: center;
 }
@@ -132,6 +130,24 @@
 .main-inquiry-button:hover {
     background-color: #3b4731;
     transform: translateY(-2px);
+}
+
+/* Styles for the carousel container */
+.bakery-carousel-container {
+    max-width: 350px; /* Adjust max-width as needed */
+    width: 100%;
+    margin: 2rem auto; /* Center the carousel and add vertical margin */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* More pronounced shadow for the carousel */
+}
+
+/* Styles for images within the carousel */
+.bakery-carousel-image {
+    width: 100%;
+    height: 350px; /* Fixed height for consistency, adjust as needed */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 8px; /* Apply rounded corners to images within the carousel */
+    display: block;
 }
 
 /* Responsive adjustments for Bakery page */

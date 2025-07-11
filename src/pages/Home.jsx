@@ -1,6 +1,7 @@
 import React from 'react';
 import Slider from 'react-slick'; // Import Slider component
-import './Home.css'; // Your existing Home page styles, now with slick imports
+import './PageDefaults.css';
+import './Home.css';
 
 function Home() {
   // Define settings for your carousel
@@ -40,11 +41,11 @@ function Home() {
       </p>
 
       {/* Image Carousel */}
-      <div className="carousel-container">
+      <div className="home-carousel-container">
         <Slider {...settings}>
           {images.map(image => (
             <div key={image.id}>
-              <img src={image.src} alt={image.alt} className="carousel-image" />
+              <img src={image.src} alt={image.alt} className="home-carousel-image" />
             </div>
           ))}
         </Slider>

@@ -2,7 +2,7 @@
 @import "../../node_modules/slick-carousel/slick/slick-theme.css";
 
 /* Styles for the carousel container */
-.carousel-container {
+.home-carousel-container {
     max-width: 900px; /* Adjust max-width as needed */
     width: 100%;
     margin: 2rem auto; /* Center the carousel and add vertical margin */
@@ -11,49 +11,12 @@
 }
 
 /* Styles for images within the carousel */
-.carousel-image {
+.home-carousel-image {
     width: 100%;
     height: 400px; /* Fixed height for consistency, adjust as needed */
     object-fit: cover; /* Ensures images cover the area without distortion */
     border-radius: 8px; /* Apply rounded corners to images within the carousel */
     display: block;
-}
-
-/* Override default slick-carousel arrow styles for better visibility and branding */
-/* Using !important to ensure these styles take precedence over slick's default styles */
-.slick-prev:before,
-.slick-next:before {
-    color: #4a5a41 !important; /* Change arrow color to match your theme */
-    font-size: 30px !important; /* Make arrows larger */
-}
-
-/* Adjust arrow positioning */
-.slick-prev {
-    left: 15px !important; /* Move left arrow slightly inside */
-    z-index: 1; /* Ensure arrows are above images */
-}
-
-.slick-next {
-    right: 15px !important; /* Move right arrow slightly inside */
-    z-index: 1;
-}
-
-/* Style for the navigation dots */
-.slick-dots li button:before {
-    font-size: 12px !important; /* Adjust dot size */
-    color: #888 !important; /* Default dot color */
-}
-
-.slick-dots li.slick-active button:before {
-    color: #4a5a41 !important; /* Active dot color */
-}
-
-.slick-list,
-.slick-track {
-    line-height: 0; /* Collapse any line-height space */
-    font-size: 0; /* Collapse any font-size space */
-    padding: 0 !important; /* Ensure no unexpected padding */
-    margin: 0 !important; /* Ensure no unexpected margin */
 }
 
 .home-page {

@@ -1,86 +1,121 @@
 import React from 'react';
+import Slider from 'react-slick'; // Import Slider component
 import { Link } from 'react-router-dom'; // Import Link for internal navigation
 import './PageDefaults.css'; // For general page styling like titles and sections
 import './Bakery.css';    // For specific bakery page styling
 
 function Bakery() {
-  const baseURL = import.meta.env.BASE_URL; // For images in the public folder
+// Define settings for your carousel
+  const settings = {
+    dots: true,          // Show dot indicators at the bottom
+    infinite: true,      // Loop the carousel
+    speed: 500,          // Transition speed in milliseconds
+    slidesToShow: 1,     // Number of slides to show at once
+    slidesToScroll: 1,   // Number of slides to scroll when navigating
+    autoplay: true,      // Enable automatic sliding
+    autoplaySpeed: 5000, // Time between slides in milliseconds (3 seconds)
+    arrows: false,        // Show navigation arrows (next/prev)
+    pauseOnHover: true,
+    // You can add more settings as needed: https://react-slick.neostack.com/docs/example/
+  };
+
+  // Define your images
+  const sugar_cookie_images = [
+    { id: 1, src: '/sugar-cookie-1.jpg', alt: 'Flower Sugar Cookies' },
+    { id: 2, src: '/sugar-cookie-2.jpg', alt: 'Oh Baby Sugar Cookies' },
+    { id: 3, src: '/sugar-cookie-3.jpg', alt: 'Taco Sugar Cookies' },
+    { id: 4, src: '/sugar-cookie-4.jpg', alt: 'Heart & Baby Sugar Cookies' },
+    { id: 5, src: '/sugar-cookie-5.jpg', alt: 'Baby Sugar Cookies' },
+    { id: 6, src: '/sugar-cookie-6.jpg', alt: 'Home Sugar Cookies' },
+    { id: 7, src: '/sugar-cookie-7.jpg', alt: 'Vegetable Sugar Cookies' },
+  ];
+
 
   return (
     <div className="page-section bakery-page">
       <h1 className="page-title">Custom Bakery Creations</h1>
       <p className="intro-text">
-        At Made on Manning, we specialize in crafting delicious and beautiful custom baked goods for all your special occasions. From elegant wedding cakes to delightful celebration cookies, every item is made with the finest ingredients and a touch of artisanal care. Explore our offerings below and let us create something truly unique for you!
+        For those moments that call for something truly special, we're thrilled to offer custom baked goods designed exclusively for your celebrations - from bridal to baby showers, graduations, or your next special event. 
       </p>
 
       <section className="bakery-category">
-        <h2 className="section-heading">Custom Cakes</h2>
+        <h2 className="section-heading">Sugar Cookies</h2>
         <div className="category-content">
-          <img src={`${baseURL}bakery-cakes.jpg`} alt="Custom Cakes" className="category-image" />
+          <div className="bakery-carousel-container">
+            <Slider {...settings}>
+              {sugar_cookie_images.map(image => (
+                <div key={image.id}>
+                  <img src={image.src} alt={image.alt} className="bakery-carousel-image" />
+                </div>
+              ))}
+            </Slider>
+          </div>
+          
           <div className="category-details">
-            <h3>Celebration Cakes for Every Occasion</h3>
             <p>
-              Whether it's a birthday, anniversary, baby shower, or just a Tuesday, our custom cakes are designed to impress both visually and tastefully. We offer a range of flavors, fillings, and frostings, and work closely with you to bring your vision to life, from classic elegance to whimsical designs.
+              We specialize in intricate royal icing designs that can be personalized to match your event's theme, colors, or brand - on top of our family's favorite vanilla almond sugar cookie.
+            </p>
+            <p>
+              Perfect for:
             </p>
             <ul>
-              <li>Weddings & Engagements</li>
-              <li>Birthdays & Anniversaries</li>
+              <li>Bridal Showers</li>
+              <li>Graduation Parties</li>
               <li>Baby Showers & Gender Reveals</li>
-              <li>Special Events & Corporate Gatherings</li>
+              <li>Special Events</li>
             </ul>
             <p>
-              **Popular Flavors:** Vanilla Bean, Rich Chocolate, Lemon Raspberry, Carrot Spice, Red Velvet.
+              <b>Pricing:</b> Starts at $3 per cookie. Minimum order of 12 cookies per design.
+              Cookies are approximately 3 inches in diameter with a maximum of 3 colors per cookie.
+              Larger cookies or more colors available, but may result in price increase.
             </p>
-            <p>
-              **Pricing:** Varies based on size, complexity, and ingredients.
-            </p>
-            <Link to="/contact" className="bakery-cta-button">Inquire About a Custom Cake</Link>
+            <Link to="/contact" className="bakery-cta-button">Inquire About Custom Cookies</Link>
           </div>
         </div>
       </section>
 
       <section className="bakery-category inverted-layout"> {/* Added inverted-layout class */}
-        <h2 className="section-heading">Artisan Cookies & Decorated Sets</h2>
+        <h2 className="section-heading">Cupcakes</h2>
         <div className="category-content">
-          <img src={`${baseURL}bakery-cookies.jpg`} alt="Decorated Cookies" className="category-image" />
+          <img src="/bakery-cupcakes.jpg" alt="Decorated Cookies" className="category-image" />
           <div className="category-details">
-            <h3>Sweet, Hand-Decorated Works of Art</h3>
             <p>
-              Our custom cookies are perfect for party favors, corporate gifts, or just a delightful treat. We specialize in intricate royal icing designs that can be personalized to match your event's theme, colors, or brand.
+              Order unique, beautiful, custom cupcakes for your next event baked with the best available ingredients.
+            </p>
+            <p>
+              Sample flavors include: <i>(others available upon request)</i>
             </p>
             <ul>
-              <li>Custom Sugar Cookies (various shapes & designs)</li>
-              <li>Gourmet Drop Cookies (chocolate chip, oatmeal raisin, snickerdoodle)</li>
-              <li>Cookie Platters & Assortments</li>
+              <li>Chocolate</li>
+              <li>Vanilla</li>
+              <li>Carrot Cake</li>
+              <li>Lemon Raspberry</li>
             </ul>
             <p>
-              **Pricing:** Varies by design complexity and quantity. Minimum order applies for custom decorated cookies.
+              <b>Pricing:</b> Starts at $3 per cupcake. Minimum of 12 cupcakes per flavor.
             </p>
-            <Link to="/contact" className="bakery-cta-button">Order Custom Cookies</Link>
+            <Link to="/contact" className="bakery-cta-button">Inquire About Custom Cupcakes</Link>
           </div>
         </div>
       </section>
 
       <section className="bakery-category">
-        <h2 className="section-heading">Pastries & Desserts</h2>
+        <h2 className="section-heading">Bulk Ordering</h2>
         <div className="category-content">
-          <img src={`${baseURL}bakery-pastries.jpg`} alt="Pastries and Desserts" className="category-image" />
+          <img src="/bakery-cakes.jpg" alt="Pastries and Desserts" className="category-image" />
           <div className="category-details">
-            <h3>Elevate Your Dessert Spread</h3>
             <p>
-              Beyond cakes and cookies, Made on Manning offers a delectable selection of pastries and smaller desserts, perfect for dessert tables, brunches, or just a delightful indulgence.
+              Love our weekly farmstand offerings but looking for a larger quantity for a special event? We have bulk ordering available!
+            </p>
+            <p>
+              Example bulk orders:
             </p>
             <ul>
-              <li>Seasonal Fruit Tarts</li>
-              <li>Cupcakes (custom flavors & decorations)</li>
-              <li>Mini Cheesecakes</li>
-              <li>Brownie & Bar platters</li>
-              <li>Macarons (seasonal flavors)</li>
+              <li>5+ loaves of sourdough bread</li>
+              <li>Sourdough bread bowls</li>
+              <li>Scones by the dozen</li>
             </ul>
-            <p>
-              Please inquire for our full menu of available items and custom order options.
-            </p>
-            <Link to="/contact" className="bakery-cta-button">Inquire About Pastry Orders</Link>
+            <Link to="/contact" className="bakery-cta-button">Inquire About Bulk Orders</Link>
           </div>
         </div>
       </section>
