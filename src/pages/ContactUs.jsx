@@ -57,7 +57,7 @@ function ContactUs() {
       // FormSubmit.co typically redirects or returns a 200 OK.
       // We check if the response was successful (status 2xx)
       if (response.ok) {
-        setSubmissionStatus({ type: 'success', message: 'Thank you for your message! We will get back to you soon.' });
+        setSubmissionStatus({ type: 'success', message: 'Thank you for your message! We will respond to you soon.' });
         // Clear the form after successful submission
         setFormData({
           name: '',
@@ -98,7 +98,6 @@ function ContactUs() {
             value={formData.name}
             onChange={handleChange}
             required
-            className="rounded-md"
           />
         </div>
 
@@ -111,7 +110,6 @@ function ContactUs() {
             value={formData.email}
             onChange={handleChange}
             required
-            className="rounded-md"
           />
         </div>
 
@@ -123,7 +121,6 @@ function ContactUs() {
             value={formData.topic}
             onChange={handleChange}
             required
-            className="rounded-md"
           >
             <option value="General Inquiry">General Inquiry</option>
             <option value="Custom Baked Goods">Custom Baked Goods</option>
@@ -141,7 +138,6 @@ function ContactUs() {
             value={formData.subject}
             onChange={handleChange}
             required
-            className="rounded-md"
           />
         </div>
 
@@ -154,25 +150,24 @@ function ContactUs() {
             value={formData.message}
             onChange={handleChange}
             required
-            className="rounded-md"
           ></textarea>
         </div>
 
         <button
           type="submit"
-          className="submit-button rounded-md"
+          className="submit-button"
           disabled={isLoading} // Disable button while submitting
         >
           {isLoading ? 'Sending...' : 'Send Message'}
         </button>
-      </form>
 
-      {/* Display submission status messages */}
-      {submissionStatus && (
-        <div className={`submission-message ${submissionStatus.type === 'success' ? 'text-green-600' : 'text-red-600'} p-3 mb-4 rounded-md`}>
-          {submissionStatus.message}
-        </div>
-      )}
+        {/* Display submission status messages */}
+        {submissionStatus && (
+          <p className="contact-submission">
+            {submissionStatus.message}
+          </p>
+        )}
+      </form>
 
       <p className="email-direct">
         You can also email us directly at: <a href="mailto:madeonmanning@gmail.com">madeonmanning@gmail.com</a>
