@@ -43,17 +43,17 @@ function Farmstand() {
     {
       id: 8,
       question: 'Do you ever sell custom baked goods?',
-      answer: 'Yes! I do take custom orders as my schedule allows. I typically take a lot fewer custom orders in the summer as my time is limited with all the baking I do for my weekly farmcart. If you are interested in more information on custom baked goods, fill out the inquiry form here. (insert link)'
+      answer: 'Yes! I do take custom orders as my schedule allows. I typically take a lot fewer custom orders in the summer as my time is limited with all the baking I do for my weekly farmcart. If you are interested in more information on custom baked goods, fill out the <a href="./contact">inquiry form here</a>.'
     },
     {
       id: 9,
       question: 'Do you sell bulk flowers?',
-      answer: 'Depending on when you event is I may be able to provide bulk flowers in buckets purchased “by the stem”. Feel free to reach out to madeonmanning@gmail.com for more information.'
+      answer: 'Depending on when your event is, I may be able to provide bulk flowers in buckets purchased "by the stem". Feel free to reach out to <a href="mailto:madeonmanning@gmail.com" rel="noopener noreferrer">madeonmanning@gmail.com</a>n or <a href="./contact">inquire here</a> for more information.'
     },
     {
       id: 10,
-      question: 'What happens to the Farmcart when it is not summer time?',
-      answer: 'During the colder months I switch to a “porch pickup” model of selling my baked goods. I typically offer 1-2 opportunities a month for people to preorder baked goods off a set menu and then pick them up from my home on a set date. The week before a porch pickup I will send out an email with a link to an order form. You fill out what you would like to order and then it will be waiting for you when it is time to pick up. If you would like to stay in the loop about upcoming porch pickup dates sign up to be on my email list here. (insert link)'
+      question: 'What happens to the farmcart when it is not summer time?',
+      answer: 'During the colder months, I switch to a "porch pickup" model of selling my baked goods. I typically offer 1-2 opportunities a month for people to preorder baked goods off a set menu and then pick them up from my home on a set date (typically Friday). The week before a porch pickup, I will send out an email with a link to an order form. You fill out what you would like to order and then it will be waiting for you on the pickup date.<br /><br />If you would like to stay in the loop about upcoming porch pickup dates, sign up to be on my email list here. <i>(link pending)</i>'
     },
   ];
 
