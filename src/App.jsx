@@ -7,6 +7,7 @@ import Bakery from './pages/Bakery';
 import Workshops from './pages/Workshops';
 import Rentals from './pages/Rentals';
 import ContactUs from './pages/ContactUs';
+import About from './pages/About';
 
 import './App.css'; // You can keep this for general app-wide styles
 
@@ -38,6 +39,7 @@ function App() {
           <Route path="/bakery" element={<Bakery />} />
           <Route path="/workshops" element={<Workshops />} />
           <Route path="/rentals" element={<Rentals />} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<ContactUs />} />
           {/* Add a fallback for unmatched routes */}
           <Route path="*" element={<Home />} />

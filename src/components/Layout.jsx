@@ -15,9 +15,9 @@ function Layout({ children }) {
             <ul>
               <li><Link to="/farmstand">Farmstand</Link></li>
               <li><Link to="/bakery">Bakery</Link></li>
-              <li><Link to="/workshops">Workshops</Link></li> 
-              <li><Link to="/rentals">Rentals</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
+              {/*<li><Link to="/workshops">Workshops</Link></li> 
+              <li><Link to="/rentals">Rentals</Link></li>*/}
+              <li><Link to="/about">About</Link></li>
             </ul>
           </nav>
         </div>

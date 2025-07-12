@@ -1,0 +1,62 @@
+import React from 'react';
+//import './About.css';
+import './PageDefaults.css';
+
+
+const About = () => {
+  return (
+    <div className="about-container page-defaults">
+      <h1 className="page-title">About Us</h1>
+      <div className="about-content">
+        <div className="about-text">
+          <p>
+            Building this farmcart was a launching point for something I'm only just realizing is so much bigger. 
+            One of my finer qualities - the one that drives my husband nuts - is my never-ending ability to 
+            <b> start</b> new projects. I'm an ace at picking up a new hobby, launching into a whole craft, and having something 
+            baking in the kitchen, all at the same time. The catch? I often don't circle back to finishing. Laundry 
+            needs to be done, the outdoors beckons, and suddenly that craft is a distant memory. But that's what 
+            makes my husband and me such a great pair. I get to dream up a million new ideas, and with him by my 
+            side, we're bound to finish every single one.
+          </p>
+          <p>
+            Another thing about me is my do-it-all tendency. This little business has been a gift because I've never 
+            felt the need to hone in on a "niche." I've always been someone who struggles to "stay in her lane." 
+            Gardening? Yes. Baking? Forever. Sourdough? Check. Want to try woodworking? You bet! Maybe a pottery wheel? 
+            Okay! Made on Manning is the outpouring of <b>all</b> the things I love to do. And as you've probably gathered, 
+            there are a lot of things I love to do.
+          </p>
+          <p>
+            The biggest blessing of all is doing this alongside my family. My husband has supported and encouraged me 
+            since before day one. He's never once dissuaded or discouraged me. He stays up late to balance the books. 
+            He builds me ingredient cost calculators and email mail merge scripts. I honestly couldn't do this without 
+            him. <i>(Or maybe I could, but it definitely wouldn't be fully compliant!)</i> He's my biggest cheerleader and fan, and he 
+            even washes my dishes and plant trays for me <i>(see aforementioned starting of many projects but severe lack 
+            of follow-through)</i>.
+          </p>
+          <p>
+            And then there are my four kids. We homeschool, so they're with me all day, every day, including the time 
+            I spend running this "business." It's been so fun that many of the jobs and activities required are things 
+            they can help with. Even my two-year-old started by peeling stickers for Mommy to put on bread bags. We plant 
+            together, cut flowers together, bake bread together, and eat cookies together. They are my little helpers, 
+            from the garden to the kitchen to running out to stock the farmcart all summer. I truly couldn't do it without 
+            them!
+          </p>
+          <p>
+            When we first came to Manning, I was making memories building this home, turning it into all we dreamed of. 
+            Now, I'm in a whole new era of making memories on Manning. Starting a business I never thought I would, 
+            launching this little farmcart into the world, and watching it take off. Of all the things I've made, baked, 
+            and grown here on Manning, the memories made here are my favorite of all.
+          </p>
+          <p>
+            With love, <b>Sarah</b>
+          </p>
+        </div>
+        <div>
+          <img src="/about-us.jpg" alt="About Made on Manning" className="hero-image" />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default About;
