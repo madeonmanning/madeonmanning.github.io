@@ -8,6 +8,10 @@ const About = () => {
     <div className="page-section about-page">
       <h1 className="page-title">About Us</h1>
       <div className="about-content">
+        <div>
+          <img src="/about-us.jpg" alt="About Made on Manning" className="hero-image" />
+        </div>
+        
         <div className="about-text">
           <p>
             Building this farmcart was a launching point for something I'm only just realizing is so much bigger. 
@@ -50,10 +54,6 @@ const About = () => {
           <p>
             With love, <b>Sarah</b>
           </p>
-        </div>
-
-        <div>
-          <img src="/about-us.jpg" alt="About Made on Manning" className="hero-image" />
         </div>
 
         <p className='intro-text subscribe-text'>
