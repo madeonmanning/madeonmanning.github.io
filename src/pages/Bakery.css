@@ -2,13 +2,6 @@
     text-align: center;
 }
 
-.bakery-page .intro-text {
-    max-width: 800px;
-    margin: 0 auto 3rem auto;
-    font-size: 1.1rem;
-    color: #5a5a5a;
-}
-
 .bakery-category {
     background-color: #fafafa;
     padding: 3rem 2rem;
@@ -45,14 +38,6 @@
 .bakery-category .category-details {
     flex: 2; /* Allows details section to take more space */
     min-width: 300px; /* Minimum width before stacking */
-}
-
-.bakery-category h3 {
-    font-family: 'Playfair Display', serif;
-    color: #6a6a6a;
-    font-size: 1.8rem;
-    margin-top: 0;
-    margin-bottom: 1rem;
 }
 
 .bakery-category ul {

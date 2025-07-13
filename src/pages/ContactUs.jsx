@@ -82,7 +82,7 @@ function ContactUs() {
   return (
     <div className="page-section contact-page">
       <h1 className="page-title">Get in Touch</h1>
-      <p>
+      <p className='intro-text contact-intro'>
         We'd love to hear from you! Whether you have a question about our products, want to
         inquire about custom orders, or need more information about rentals, please use the
         form below to reach out.
