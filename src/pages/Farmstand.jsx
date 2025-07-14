@@ -53,7 +53,7 @@ function Farmstand() {
     {
       id: 10,
       question: 'What happens to the farmcart when it is not summer time?',
-      answer: 'During the colder months, I switch to a "porch pickup" model of selling my baked goods. I typically offer 1-2 opportunities a month for people to preorder baked goods off a set menu and then pick them up from my home on a set date (typically Friday). The week before a porch pickup, I will send out an email with a link to an order form. You fill out what you would like to order and then it will be waiting for you on the pickup date.<br /><br />If you would like to stay in the loop about upcoming porch pickup dates, sign up to be on my email list here. <i>(link pending)</i>'
+      answer: 'During the colder months, I switch to a "porch pickup" model of selling my baked goods. I typically offer 1-2 opportunities a month for people to preorder baked goods off a set menu and then pick them up from my home on a set date (typically Friday). The week before a porch pickup, I will send out an email with a link to an order form. You fill out what you would like to order and then it will be waiting for you on the pickup date.<br /><br />If you would like to stay in the loop about upcoming porch pickup dates, <a href="./about#subscribe">sign up to be on my email list here</a>.'
     },
   ];
 

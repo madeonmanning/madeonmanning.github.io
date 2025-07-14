@@ -25,16 +25,6 @@
     align-items: center; /* Vertically align content within the category */
 }
 
-.bakery-category .category-image {
-    flex: 1; /* Allows image to grow/shrink */
-    min-width: 300px; /* Minimum width before stacking */
-    max-width: 500px; /* Limit image size */
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
 .bakery-category .category-details {
     flex: 2; /* Allows details section to take more space */
     min-width: 300px; /* Minimum width before stacking */

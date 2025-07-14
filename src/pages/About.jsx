@@ -1,9 +1,65 @@
-import React from 'react';
-//import './About.css';
+import React, { useState, useEffect } from 'react'; // Import useEffect
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation
+import './About.css';
 import './PageDefaults.css';
 
 
-const About = () => {
+function About() {
+
+  const [email, setEmail] = useState('');
+  const [submissionStatus, setSubmissionStatus] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+
+  const location = useLocation(); // Get the current location object
+
+  // Effect to scroll to the section when the hash changes
+  useEffect(() => {
+    if (location.hash) {
+      // Remove the '#' from the hash to get the ID
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        // Scroll to the element with smooth behavior
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]); // Re-run this effect whenever the location (including hash) changes
+
+  const handleEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubscribeSubmit = async (e) => {
+    e.preventDefault(); // Prevent default browser form submission
+
+    setIsLoading(true);
+    setSubmissionStatus(null); // Clear previous status
+
+    const dataToSend = new FormData();
+    dataToSend.append('email', email);
+    dataToSend.append('_subject', 'New Newsletter Subscription'); // Custom subject for FormSubmit.co
+    dataToSend.append('_captcha', 'false'); // Disable captcha
+
+    try {
+      const response = await fetch("https://formsubmit.co/443b1077a09ebce89f8950b9fb77b52d", { // Replace with your FormSubmit.co endpoint
+        method: "POST",
+        body: dataToSend,
+      });
+
+      if (response.ok) {
+        setSubmissionStatus({ type: 'success', message: 'Thank you for subscribing! You will receive a confirmation email within 24 hours.' });
+        setEmail(''); // Clear email field
+      } else {
+        setSubmissionStatus({ type: 'error', message: 'There was an error with your subscription. Please try again.' });
+      }
+    } catch (error) {
+      console.error('Subscription error:', error);
+      setSubmissionStatus({ type: 'error', message: 'A network error occurred. Please check your connection and try again.' });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <div className="page-section about-page">
       <h1 className="page-title">About Us</h1>
@@ -56,13 +112,49 @@ const About = () => {
           </p>
         </div>
 
-        <p className='intro-text subscribe-text'>
-            <b>Want to stay in touch?</b><br />
-            <a href='#'>Subscribe</a> or <a href="./contact">Contact Us</a>!
-        </p>
+        <div className="page-category">
+          <h2 className="category-heading">Stay in Touch</h2>
+          <div className="category-options-container"> {/* New container for the two options */}
+
+            {/* Option 1: Contact Us */}
+            <div className="option-block contact-option">
+              <h3>Have a specific question?</h3>
+              <p>Fill out our contact form and we'll get back to you as soon as possible.</p>
+              <Link to="/contact" className="cta-button">Contact Us</Link>
+            </div>
+
+            {/* Option 2: Subscribe to Newsletter */}
+            <div className="option-block subscribe-option" id="subscribe">
+              <h3>Join our subscription list!</h3>
+              <p>Stay updated with our latest news and offerings.</p>
+              <form className="subscribe-form" onSubmit={handleSubscribeSubmit}> {/* Renamed class for clarity */}
+                <input
+                  type="email"
+                  placeholder="Your Email Address"
+                  value={email}
+                  onChange={handleEmailChange}
+                  required
+                />
+                <button
+                  type="submit"
+                  className="cta-button"
+                  disabled={isLoading}
+                >
+                  {isLoading ? 'Subscribing...' : 'Subscribe'}
+                </button>
+                {submissionStatus && (
+                  <p className={`subscribe-status ${submissionStatus.type}`}>
+                    {submissionStatus.message}
+                  </p>
+                )}
+              </form>
+            </div>
+
+          </div> {/* End of category-options-container */}
+        </div>
       </div>
     </div>
   );
-};
+}
 
 export default About;
