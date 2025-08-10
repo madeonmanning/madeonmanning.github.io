@@ -19,6 +19,14 @@
       gtag('config', 'G-BY0H0G1CQK');
     </script>
   
+  <script>
+      (function() {
+        const p = new URLSearchParams(window.location.search).get('p');
+        if (p) {
+          window.history.replaceState(null, null, p);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
