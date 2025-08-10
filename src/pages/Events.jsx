@@ -7,53 +7,53 @@ function Events() {
   const events = [
     {
       id: 1,
-      image: '/cupcake-1.jpg',
+      image: '/bulk-baking-1.jpg',
       date: 'August 15, 2025',
       time: '9:00 AM',
-      title: 'Farmstand',
-      description: 'Join us for a fun and interactive cupcake decorating workshop. Learn various piping techniques and create your own beautiful cupcakes to take home.',
+      title: 'Farmstand - Classics',
+      description: 'Come to the farmstand this Friday for all your classic favorites: Sourdough Raspberry White Chocolate Scones, Honey Molassess Sourdough Bread, Cinnamon Rolls, and more!',
       link: './farmstand',
-      linkText: 'Learn More'
+      linkText: 'Farmstand Details'
     },
     {
       id: 2,
-      image: '/sugar-cookie-1.jpg',
+      image: '/bulk-baking-1.jpg',
       date: 'August 22, 2025',
       time: '9:00 AM',
-      title: 'Farmstand',
-      description: 'Take your cookie decorating skills to the next level. This workshop will cover advanced techniques like royal icing transfers and airbrushing.',
-      link: '#',
-      linkText: 'Learn More'
+      title: 'Farmstand - Peaches',
+      description: 'Come to the farmstand this Friday for peach-themed bakes: Peach Jam, Peach Handpies, Peach Cinnamon Rolls, and more!',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
     },
     {
       id: 3,
       image: '/bulk-baking-1.jpg',
       date: 'August 29, 2025',
       time: '9:00 AM',
-      title: 'Farmstand',
-      description: 'Learn the art and science of sourdough bread making. From starter to finished loaf, we will guide you through the entire process.',
-      link: '#',
-      linkText: 'Learn More'
+      title: 'Farmstand - Apples',
+      description: 'Come to the farmstand this Friday for a preview to fall with an apple-themed week.',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
     },
-    {
+    /*{
       id: 4,
-      image: '/bulk-baking-1.jpg',
-      date: 'September 10, 2025',
-      time: '6:00 PM - 7:30 PM',
-      title: 'Build Beautiful Bouquet',
-      description: 'Learn the art and science of sourdough bread making. From starter to finished loaf, we will guide you through the entire process.',
+      image: '/events-flowers.jpg',
+      date: 'September 13, 2025',
+      time: '9:00 AM - 11:00 AM',
+      title: 'Backyard Bouquet Building',
+      description: 'Come to my backyard to build your own bouquet using our end of summer blooms. Follow link below to sign up. Space is limited.',
       link: '#',
       linkText: 'Sign Up'
-    },
+    },*/
     {
       id: 5,
-      image: '/bulk-baking-1.jpg',
-      date: 'October 17-18, 2025',
-      time: '9:00AM - 5:00 PM',
+      image: '/events-mm.jpg',
+      date: 'October 24, 2025: 10:00 AM - 6:00 PM',
+      time: 'October 25, 2025: 9:00 AM - 4:00 PM',
       title: 'Makers Market',
-      description: 'Learn the art and science of sourdough bread making. From starter to finished loaf, we will guide you through the entire process.',
+      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.',
       link: '#',
-      linkText: 'Sign Up'
+      linkText: 'Details Coming Soon'
     }
   ];
 
