@@ -1,9 +1,9 @@
 {
   "/_not-found/page": "/_not-found",
-  "/about/page": "/about",
   "/events/page": "/events",
+  "/about/page": "/about",
   "/farmstand/page": "/farmstand",
-  "/page": "/",
+  "/bakery/page": "/bakery",
   "/contact/page": "/contact",
-  "/bakery/page": "/bakery"
+  "/page": "/"
 }
