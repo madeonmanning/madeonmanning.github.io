@@ -1,0 +1,381 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Global Reset & Box Sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base Body Styles */
+body {
+  font-family: 'Inter', sans-serif; /* Default font for the entire body */
+  line-height: 1.6;
+  color: #333; /* Slightly darker default text for readability */
+  background-color: #fdfdfd; /* A very subtle off-white background */
+  -webkit-font-smoothing: antialiased; /* Improves font rendering on macOS/iOS */
+  -moz-osx-font-smoothing: grayscale; /* Improves font rendering on macOS/iOS */
+}
+
+/* Remove default link styling */
+a {
+  text-decoration: none;
+  color: inherit; /* Inherit color from parent by default */
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Heading Defaults (can be overridden by specific component styles) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif; /* Default heading font */
+  margin-bottom: 0.5em;
+  color: #4a5a41; /* Default heading color, earthy green */
+}
+
+/* Paragraph Defaults */
+p {
+  margin-bottom: 1em;
+}
+
+/* Image Defaults */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Removes extra space below images */
+}
+
+
+
+/* General Layout Styling */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures footer sticks to bottom on short content pages */
+}
+
+.site-header {
+    background-color: #f8f5f0; /* Light, earthy background, similar to examples */
+    padding: 0rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    border-bottom: 1px solid #e0ddd9; /* Subtle border */
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.site-logo {
+    font-family: 'Playfair Display', serif; /* Placeholder, will load later */
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4a5a41; /* Muted green/brown, earthy tone */
+    text-decoration: none;
+    padding: 0.5rem 0;
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Vertically align image and text */
+    gap: 0.5rem; /* Space between logo image and text */
+}
+
+.site-logo-image {
+    height: 40px; /* Adjust as needed for your logo's size */
+    width: auto; /* Maintain aspect ratio */
+    /* You might want to add a small margin if the gap isn't enough, e.g., margin-right: 0.25rem; */
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem; /* Space between navigation items */
+}
+
+.main-nav a {
+    font-family: 'Inter', sans-serif; /* Placeholder, will load later */
+    font-size: 1rem;
+    color: #6a6a6a; /* Softer dark grey */
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #4a5a41; /* Underline color */
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease;
+}
+
+.main-nav a:hover {
+    color: #4a5a41;
+}
+
+.main-nav a:hover::after {
+    width: 100%;
+}
+
+.site-content {
+    flex-grow: 1; /* Pushes footer to the bottom */
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem; /* Consistent padding for page content */
+}
+
+.site-footer {
+    background-color: #f8f5f0; /* Match header background */
+    padding: 1rem 2rem;
+    border-top: 1px solid #e0ddd9;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #888;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif; /* Placeholder */
+    display: flex;
+    justify-content: space-between; /* Pushes copyright left, social links right */
+    align-items: center; /* Vertically centers items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 1rem; /* Space between copyright and social links if they wrap */
+}
+
+.footer-content .copyright {
+    margin-bottom: 0; /* Remove default paragraph margin */
+    /* text-align: left; - not needed with justify-content: space-between */
+}
+
+.social-links {
+    display: flex; /* Make icons side-by-side */
+    gap: 1rem; /* Space between social icons */
+}
+
+.social-links a {
+    color: #6a6a6a; /* Icon color */
+    text-decoration: none;
+    /* Removed margin: 0 0.5rem; */
+    transition: color 0.3s ease;
+    font-size: 1.5rem; /* Size of the icons */
+}
+
+.social-links a:hover {
+    color: #4a5a41; /* Hover color for icons */
+}
+
+
+/* Basic Responsive Adjustments (Ensure footer adapts too) */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    /* Footer adjustments for small screens */
+    .footer-content {
+        flex-direction: column; /* Stack copyright and social links vertically */
+        align-items: center; /* Center them when stacked */
+        text-align: center; /* Center text */
+    }
+    .footer-content .copyright {
+        margin-bottom: 0.5rem; /* Add some space when stacked */
+    }
+}
+
+
+.page-section {
+    padding: 3rem 0; /* Consistent vertical spacing for content sections */
+    font-family: 'Inter', sans-serif; /* Default text font */
+    color: #4a4a4a; /* Main text color */
+    line-height: 1.7; /* Readability */
+    
+}
+
+.bakery-page,
+.contact-intro,
+.subscribe-text {
+    text-align: center;
+}
+
+.page-title {
+    font-family: 'Playfair Display', serif; /* Heading font */
+    font-size: 2.5rem;
+    color: #4a5a41; /* Heading color */
+    text-align: center;
+    margin-bottom: 2.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.page-title::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 2px;
+    background: #a3b18a; /* Underline accent */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+.hero-image {
+    max-width: 100%; /* Ensures image is responsive and doesn't overflow */
+    height: auto; /* Maintains aspect ratio */
+    display: block; /* Removes any extra space below the image */
+    margin: 0; /* Centers the image and adds vertical spacing */
+    border-radius: 8px; /* Soften edges */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.intro-text {
+    flex: 1; /* Allows text to grow and shrink */
+    min-width: 300px; /* Ensure text doesn't get too narrow before wrapping */
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+}
+
+.intro-text a {
+  color: #a3b18a; /* A distinct color for links, e.g., a lighter green from your palette */
+  text-decoration: underline; /* Underline links */
+  font-weight: 600; /* Make links a bit bolder */
+  transition: color 0.3s ease;
+}
+
+.intro-text a:hover {
+  color: #4a5a41; /* Darker green on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+
+.page-category {
+    background-color: #fafafa;
+    padding: 3rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-bottom: 3.5rem; /* More space between categories */
+    text-align: left;
+}
+
+.page-category .category-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: #4a5a41;
+}
+
+.page-category .category-content {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 2.5rem; /* Increased gap */
+    align-items: center; /* Vertically align content within the category */
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #a3b18a; /* Soft green button */
+    color: white;
+    padding: 0.8rem 1.8rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.cta-button:hover {
+    background-color: #8c9d72;
+    transform: translateY(-1px);
+}
+
+/* Basic List Styling */
+/*.page-section ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 1.5rem;
+}*/
+
+/*.page-section ul li {
+    background-color: #fcfcfc;
+    border-left: 3px solid #a3b18a; /* Accent border */
+    /*padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}*/
+
+.page-section h3 {
+    font-family: 'Playfair Display', serif;
+    color: #6a6a6a;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+
+
+
+/* Override default slick-carousel arrow styles for better visibility and branding */
+/* Using !important to ensure these styles take precedence over slick's default styles */
+.slick-prev:before,
+.slick-next:before {
+    color: #fff !important; /* Change arrow color to match your theme */
+    font-size: 30px !important; /* Make arrows larger */
+}
+
+/* Adjust arrow positioning */
+.slick-prev {
+    left: 5px !important; /* Move left arrow slightly inside */
+    width: 30px !important;
+    height: 30px !important;
+    z-index: 1; /* Ensure arrows are above images */
+}
+
+.slick-next {
+    right: 5px !important; /* Move right arrow slightly inside */
+    width: 30px !important;
+    height: 30px !important;
+    z-index: 1;
+}
+
+/* Style for the navigation dots */
+.slick-dots li button:before {
+    font-size: 12px !important; /* Adjust dot size */
+    color: #888 !important; /* Default dot color */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #4a5a41 !important; /* Active dot color */
+}
+
+.slick-dots {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.slick-list,
+.slick-track {
+    line-height: 0; /* Collapse any line-height space */
+    font-size: 0; /* Collapse any font-size space */
+    padding: 0 !important; /* Ensure no unexpected padding */
+    margin: 0 !important; /* Ensure no unexpected margin */
+}

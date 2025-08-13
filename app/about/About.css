@@ -1,0 +1,99 @@
+/* General styling for option blocks */
+.option-block {
+    background-color: #ffffff; /* White background for each option */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    text-align: center; /* Center content within each block */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes button to bottom if content varies */
+    flex: 1; /* Allows blocks to grow and shrink evenly */
+}
+
+.about-text {
+    margin: 2rem auto;
+}
+
+.option-block h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    color: #4a5a41;
+    margin-bottom: 1rem;
+}
+
+.option-block p {
+    font-size: 1rem;
+    color: #6a6a6a;
+    margin-bottom: 1.5rem;
+    flex-grow: 1; /* Allows paragraph to take up available space */
+}
+
+/* Container for the two option blocks */
+.category-options-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 2rem; /* Space between the two blocks */
+    justify-content: center; /* Center blocks horizontally */
+    align-items: stretch; /* Ensures blocks have equal height */
+}
+
+/* Specific styling for the subscribe form within its block */
+.subscribe-form { /* Renamed from .subscribe-form-container */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between input and button */
+    margin-top: 1rem; /* Add some space above the form elements */
+}
+
+.subscribe-form input[type="email"] {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.subscribe-form input[type="email"]:focus {
+    outline: none;
+    border-color: #a3b18a;
+    box-shadow: 0 0 0 2px rgba(163, 177, 138, 0.2);
+}
+
+.subscribe-form .cta-button {
+    width: 100%; /* Full width button within the form */
+    margin-top: 0; /* Remove default margin from cta-button */
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    border: 0;
+    line-height: 1.7; /* Readability */
+}
+
+.subscribe-status {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+}
+
+.subscribe-status.success {
+    color: #4a5a41;
+}
+
+.subscribe-status.error {
+    color: #d9534f;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .category-options-container {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: center; /* Center stacked blocks */
+    }
+
+    .option-block {
+        width: 90%; /* Max width for stacked blocks */
+        max-width: 450px; /* Limit width */
+    }
+}

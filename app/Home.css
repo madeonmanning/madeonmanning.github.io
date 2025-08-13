@@ -1,0 +1,52 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+/* Styles for the carousel container */
+.home-carousel-container {
+    max-width: 900px; /* Adjust max-width as needed */
+    width: 100%;
+    margin: 2rem auto; /* Center the carousel and add vertical margin */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* More pronounced shadow for the carousel */
+}
+
+/* Styles for images within the carousel */
+.home-carousel-image {
+    width: 100%;
+    height: 400px; /* Fixed height for consistency, adjust as needed */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 8px; /* Apply rounded corners to images within the carousel */
+    display: block;
+}
+
+.home-page {
+    text-align: center;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.grid-item {
+    background-color: #fafafa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.grid-item h2 {
+    font-family: 'Playfair Display', serif;
+    color: #4a5a41;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.grid-item p {
+    font-family: 'Inter', sans-serif;
+    color: #6a6a6a;
+    line-height: 1.6;
+}
