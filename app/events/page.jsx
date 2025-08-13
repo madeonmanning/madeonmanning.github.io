@@ -51,9 +51,9 @@ function Events() {
       date: 'October 24, 2025: 10:00 AM - 6:00 PM',
       time: 'October 25, 2025: 9:00 AM - 4:00 PM',
       title: 'Makers Market',
-      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.',
-      link: '#',
-      linkText: 'Details Coming Soon'
+      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.<br/><br/>To express interest in being a vendor at this event, submit <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTkkGB87TScarGqCg1QfFpHD-_gYlNc3FDNyyf5283zsJ9MA/viewform?usp=header" target="_blank" rel="noopener noreferrer">this form</a>.',
+      link: './events-mm-info.jpg',
+      linkText: 'More Details'
     }
   ];
 
@@ -67,7 +67,7 @@ function Events() {
             <div className="event-info">
               <h3 className="event-title">{event.title}</h3>
               <p className="event-date-time">{event.date} | {event.time}</p>
-              <p className="event-description">{event.description}</p>
+              <p className="event-description" dangerouslySetInnerHTML={{ __html: event.description }}></p>
               <a href={event.link} className="cta-button">{event.linkText}</a>
             </div>
           </div>
