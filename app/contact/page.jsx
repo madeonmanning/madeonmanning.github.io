@@ -126,6 +126,7 @@ function ContactUs() {
           >
             <option value="General Inquiry">General Inquiry</option>
             <option value="Custom Baked Goods">Custom Baked Goods</option>
+            <option value="Workshops">Workshops</option>
             <option value="Rentals">Rentals</option>
             <option value="Other">Other</option>
           </select>
