@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
                   <li><Link href="/farmstand">Farmstand</Link></li>
                   <li><Link href="/bakery">Bakery</Link></li>
                   <li><Link href="/events">Events</Link></li>
+                  <li><Link href="/rentals">Rentals</Link></li>
                   {/*<li><Link to="/workshops">Workshops</Link></li> 
                   <li><Link to="/rentals">Rentals</Link></li>*/}
                   <li><Link href="/about">About</Link></li>
