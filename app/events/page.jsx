@@ -5,7 +5,7 @@ import './Events.css';
 function Events() {
   // Placeholder data for events
   const events = [
-    {
+    /*{
       id: 1,
       image: '/bulk-baking-1.jpg',
       date: 'August 15, 2025',
@@ -14,7 +14,7 @@ function Events() {
       description: 'Come to the farmstand this Friday for all your classic favorites: Sourdough Raspberry White Chocolate Scones, Honey Molassess Sourdough Bread, Cinnamon Rolls, and more!',
       link: './farmstand',
       linkText: 'Farmstand Details'
-    },
+    },*/
     {
       id: 2,
       image: '/bulk-baking-1.jpg',
