@@ -17,7 +17,7 @@ function Events() {
     },*/
     {
       id: 2,
-      image: '/bulk-baking-1.jpg',
+      image: '/events-farmstand-peach.jpg',
       date: 'August 22, 2025',
       time: '9:00 AM',
       title: 'Farmstand - Peaches',
