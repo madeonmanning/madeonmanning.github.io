@@ -14,7 +14,7 @@ function Events() {
       description: 'Come to the farmstand this Friday for all your classic favorites: Sourdough Raspberry White Chocolate Scones, Honey Molassess Sourdough Bread, Cinnamon Rolls, and more!',
       link: './farmstand',
       linkText: 'Farmstand Details'
-    },*/
+    },
     {
       id: 2,
       image: '/events-farmstand-peach.jpg',
@@ -24,14 +24,14 @@ function Events() {
       description: 'Come to the farmstand this Friday for peach-themed bakes: Peach Jam, Peach Handpies, Peach Cinnamon Rolls, and more!',
       link: './farmstand',
       linkText: 'Farmstand Details'
-    },
+    },*/
     {
       id: 3,
-      image: '/bulk-baking-1.jpg',
+      image: '/events-farmstand-apples.jpg',
       date: 'August 29, 2025',
       time: '9:00 AM',
       title: 'Farmstand - Apples',
-      description: 'Come to the farmstand this Friday for a preview to fall with an apple-themed week.',
+      description: 'Come to the farmstand this Friday for a preview to fall with an apple-themed week: Apple Butter, Mini Apple Bundt Cakes, Apple Cinnamon Sourdough, Caramel Apple Cinnamon Rolls, and more!',
       link: './farmstand',
       linkText: 'Farmstand Details'
     },
