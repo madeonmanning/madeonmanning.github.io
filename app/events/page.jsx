@@ -25,7 +25,7 @@ function Events() {
       link: './farmstand',
       linkText: 'Farmstand Details'
     },*/
-    {
+    /*{
       id: 3,
       image: '/events-farmstand-apples.jpg',
       date: 'August 29, 2025',
@@ -34,7 +34,7 @@ function Events() {
       description: 'Come to the farmstand this Friday for a preview to fall with an apple-themed week: Apple Butter, Mini Apple Bundt Cakes, Apple Cinnamon Sourdough, Caramel Apple Cinnamon Rolls, and more!',
       link: './farmstand',
       linkText: 'Farmstand Details'
-    },
+    },*/
     /*{
       id: 4,
       image: '/events-flowers.jpg',
@@ -48,10 +48,20 @@ function Events() {
     {
       id: 5,
       image: '/events-mm.jpg',
-      date: 'October 24, 2025: 10:00 AM - 6:00 PM',
-      time: 'October 25, 2025: 9:00 AM - 4:00 PM',
+      date: 'October 24, 2025',
+      time: '10:00 AM - 6:00 PM',
       title: 'Makers Market',
-      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.<br/><br/>To express interest in being a vendor at this event, submit <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTkkGB87TScarGqCg1QfFpHD-_gYlNc3FDNyyf5283zsJ9MA/viewform?usp=header" target="_blank" rel="noopener noreferrer">this form</a>.',
+      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.<br/><br/>Additional details coming soon.',
+      link: './events-mm-info.jpg',
+      linkText: 'More Details'
+    },
+    {
+      id: 6,
+      image: '/events-mm.jpg',
+      date: 'October 25, 2025',
+      time: '9:00 AM - 4:00 PM',
+      title: 'Makers Market',
+      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.<br/><br/>Additional details coming soon.',
       link: './events-mm-info.jpg',
       linkText: 'More Details'
     }

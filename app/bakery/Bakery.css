@@ -132,6 +132,23 @@
     bottom: -2em;
 }
 
+.open-images {
+    position: absolute;
+    /*top: 10px;*/
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+    /*background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;*/
+    opacity: 0.75;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* Responsive adjustments for Bakery page */
 @media (max-width: 768px) {
     .bakery-category .category-content,

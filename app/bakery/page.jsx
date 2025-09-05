@@ -1,12 +1,29 @@
 "use client"
 
-import React from 'react';
+import React, { useState } from 'react';
+import ImageGalleryModal from '../components/ImageGalleryModal';
 import Slider from 'react-slick';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import '../globals.css';
 import './Bakery.css';
 
+
 function Bakery() {
+  const [isModalOpen, setModalOpen] = useState(false);
+  const [modalImages, setModalImages] = useState([]);
+
+  const openModal = (images) => {
+    setModalImages(images);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalOpen(false);
+    setModalImages([]);
+  };
+
   // Define settings for your carousel
   const settings = {
     dots: true,          // Show dot indicators at the bottom
@@ -62,7 +79,10 @@ function Bakery() {
       <section className="bakery-category">
         <h2 className="section-heading">Sugar Cookies</h2>
         <div className="category-content">
-          <div className="bakery-carousel-container">
+          <div className="bakery-carousel-container" style={{ position: 'relative' }}>
+            <div className='open-images' onClick={() => openModal(sugar_cookie_images)}>
+              <FontAwesomeIcon icon={faUpRightFromSquare} style={{ color: 'white', fontSize: '20px' }} />
+            </div>
             <Slider {...settings}>
               {sugar_cookie_images.map(image => (
                 <div key={image.id}>
@@ -98,7 +118,10 @@ function Bakery() {
       <section className="bakery-category inverted-layout"> {/* Added inverted-layout class */}
         <h2 className="section-heading">Cupcakes</h2>
         <div className="category-content">
-          <div className="bakery-carousel-container">
+          <div className="bakery-carousel-container" style={{ position: 'relative' }}>
+            <div className='open-images' onClick={() => openModal(cupcake_images)}>
+              <FontAwesomeIcon icon={faUpRightFromSquare} style={{ color: 'white', fontSize: '20px' }} />
+            </div>
             <Slider {...settings}>
               {cupcake_images.map(image => (
                 <div key={image.id}>
@@ -132,7 +155,10 @@ function Bakery() {
       <section className="bakery-category">
         <h2 className="section-heading">Bulk Ordering</h2>
         <div className="category-content">
-          <div className="bakery-carousel-container">
+          <div className="bakery-carousel-container" style={{ position: 'relative' }}>
+            <div className='open-images' onClick={() => openModal(bulk_baking_images)}>
+              <FontAwesomeIcon icon={faUpRightFromSquare} style={{ color: 'white', fontSize: '20px' }} />
+            </div>
             <Slider {...settings}>
               {bulk_baking_images.map(image => (
                 <div key={image.id}>
@@ -164,6 +190,7 @@ function Bakery() {
         <Link href="/contact" className="main-inquiry-button">Start Your Custom Order Inquiry</Link>
       </div>
 
+      {isModalOpen && <ImageGalleryModal images={modalImages} onClose={closeModal} />}
     </div>
   );
 }
