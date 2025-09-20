@@ -14,12 +14,12 @@ function Farmstand() {
     {
       id: 2,
       question: 'When are you open?',
-      answer: 'The farmstand is out on Fridays throughout summer. We open at 9am and are typically out until 5pm (unless sold out sooner).'
+      answer: 'The farmstand is out on Fridays throughout summer. We open at 9am and are typically out until 12pm (unless sold out sooner). <b>The farmstand is closed for 2025.</b>'
     },
     {
       id: 3,
       question: 'How do I pay?',
-      answer: 'The farmstand runs on honor system. There is no one there to collect payment, but there is an option to drop cash in a locked cash box or use my Venmo QR code (<a href="https://account.venmo.com/u/madeonmanning" target="_blank" rel="noopener noreferrer">@madeonmanning</a>) is posted.'
+      answer: 'The farmstand runs on the honor system. There is no one there to collect payment, but there is an option to drop cash in a locked cash box or use my Venmo QR code (<a href="https://account.venmo.com/u/madeonmanning" target="_blank" rel="noopener noreferrer">@madeonmanning</a>) is posted.'
     },
     {
       id: 4,
@@ -54,7 +54,7 @@ function Farmstand() {
     {
       id: 10,
       question: 'What happens to the farmcart when it is not summer time?',
-      answer: 'During the colder months, I switch to a "porch pickup" model of selling my baked goods. I typically offer 1-2 opportunities a month for people to preorder baked goods off a set menu and then pick them up from my home on a set date (typically Friday). The week before a porch pickup, I will send out an email with a link to an order form. You fill out what you would like to order and then it will be waiting for you on the pickup date.<br /><br />If you would like to stay in the loop about upcoming porch pickup dates, <a href="./about#subscribe">sign up to be on my email list here</a>.'
+      answer: 'During the colder months, I switch to a "porch pickup" model of selling my baked goods. I typically offer 1-2 opportunities a month for people to preorder baked goods off a set menu and then pick them up from my home on a set date (typically Friday). The week before a porch pickup, I will send out an email with a link to an order form. You fill out what you would like to order and then it will be waiting for you on the pickup date.<br /><br />If you would like to stay in the loop about upcoming porch pickup dates, <a href="./about#subscribe">sign up to be on my email list here</a>.<br /><br />You can find any currently scheduled porch pickups on the <a href="./events">events page</a>.'
     },
   ];
 
@@ -69,6 +69,9 @@ function Farmstand() {
           className="farmstand-intro-image hero-image"
         />
         <div className="farmstand-intro-text intro-text">
+          <p className="farmstand-announce">
+            The farmstand is closed for the season. We look forward to seeing you in June 2026!
+          </p>
           <p>
             During the summer months of June through September join us at our home on Manning Avenue South in
             Woodbury, MN, for a delightful selection of homemade sourdough, fresh baked goods, and seasonal flowers.

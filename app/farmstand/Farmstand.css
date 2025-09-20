@@ -20,6 +20,13 @@
     min-width: 300px; /* Ensure text doesn't get too narrow before wrapping */
 }
 
+.farmstand-announce {
+    font-weight: bold;
+    color: #8B4513; /* A warm, rustic brown color */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 /* Responsive adjustments for the intro content */
 @media (max-width: 768px) {
     .farmstand-intro-content {
