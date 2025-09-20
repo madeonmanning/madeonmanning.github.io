@@ -70,7 +70,7 @@ function Farmstand() {
         />
         <div className="farmstand-intro-text intro-text">
           <p className="farmstand-announce">
-            The farmstand is closed for the season. We look forward to seeing you in June 2026!
+            The farmstand is closed for the season. Look for the weekly farmstand to start again in June 2026!
           </p>
           <p>
             During the summer months of June through September join us at our home on Manning Avenue South in
