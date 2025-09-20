@@ -128,6 +128,7 @@ function ContactUs() {
             <option value="Custom Baked Goods">Custom Baked Goods</option>
             <option value="Workshops">Workshops</option>
             <option value="Rentals">Rentals</option>
+            <option value="Books">Books</option>
             <option value="Other">Other</option>
           </select>
         </div>
