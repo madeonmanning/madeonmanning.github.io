@@ -5,17 +5,17 @@ import './Events.css';
 function Events() {
   // Placeholder data for events
   const events = [
-    /*{
+    {
       id: 1,
       image: '/bulk-baking-1.jpg',
-      date: 'August 15, 2025',
-      time: '9:00 AM',
-      title: 'Farmstand - Classics',
-      description: 'Come to the farmstand this Friday for all your classic favorites: Sourdough Raspberry White Chocolate Scones, Honey Molassess Sourdough Bread, Cinnamon Rolls, and more!',
-      link: './farmstand',
-      linkText: 'Farmstand Details'
+      date: 'October 3, 2025',
+      time: '9:00 AM - 5:00 PM',
+      title: 'Porch Pickup',
+      description: 'Order from a specialized menu and come pick up from my porch on October 3. Be one of the first people to get your hands on one of my new books.',
+      link: 'https://forms.gle/7V1kTv2pbTfTPGrH8',
+      linkText: 'Order Form'
     },
-    {
+    /*{
       id: 2,
       image: '/events-farmstand-peach.jpg',
       date: 'August 22, 2025',

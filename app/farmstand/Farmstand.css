@@ -9,7 +9,7 @@
 
 .farmstand-intro-image {
     flex: 0 0 300px; /* Don't grow, don't shrink, base width 300px */
-    max-width: 500px; /* Ensure it doesn't overflow its flex item */
+    max-width: 500px !important; /* Ensure it doesn't overflow its flex item */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Crop image if necessary to fit */
     display: block; /* Remove extra space below image */
