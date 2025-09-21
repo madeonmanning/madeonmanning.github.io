@@ -17,7 +17,8 @@ function Books() {
         'notes from my heart surrounding serving others through simple acts of making space for them in your home and at your table',
       ],
       cost: '$25',
-      image: '/book-recipes-made-on-manning.jpg'
+      image: '/book-recipes-made-on-manning.jpg',
+      url: 'https://madeonmanning.square.site/product/book-recipes-made-on-manning/QPRTJHQI2J5A4KZ3QBSCZSMW'
     },
     {
       id: 2,
@@ -31,7 +32,8 @@ function Books() {
         'notes from my heart about my desire to bring others together over something as simple as a shared meal'
       ],
       cost: '$25',
-      image: '/book-sourdough-made-on-manning.jpg'
+      image: '/book-sourdough-made-on-manning.jpg',
+      url: 'https://madeonmanning.square.site/product/book-sourdough-made-on-manning/7UX67ZO6PERWVNX3MXFNM6NA'
     }
   ];
 
@@ -60,14 +62,15 @@ function Books() {
               <p>
                 <b>Pricing:</b> {item.cost}
               </p>
+              <a href={item.url} target="_blank" className="book-order-button">Order {item.name}</a>
             </div>
           </div>
         </section>
       ))}
 
       <div className="inquiry-call-to-action">
-        <p>Interested in ordering one or both of these books?</p>
-        <Link href="/contact" className="main-inquiry-button">Contact Me</Link>
+        <p>Interested in ordering one or both of these books? <Link href="/contact">Contact me</Link> or visit <a href='https://madeonmanning.square.site/'>my online store</a>.</p>
+        <a href="https://madeonmanning.square.site/" target="_blank" className="main-inquiry-button">Order Here</a>
       </div>
 
     </div>
