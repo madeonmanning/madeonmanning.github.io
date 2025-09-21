@@ -22,7 +22,7 @@ function Books() {
     {
       id: 2,
       name: 'Sourdough Made on Manning',
-      story: 'Explore the world of sourdough with this new immersive booklet. Sarah took her sourdough workshop and turned it into written instructins with guided step-by-step photos to help you begin or further your sourdough journey.',
+      story: 'Explore the world of sourdough with this new immersive booklet. Sarah took her sourdough workshop and turned it into written instructions with guided step-by-step photos to help you begin or further your sourdough journey.',
       specs: [
         'how to care for and maintain a sourdough starter',
         'original sourdough bread step-by-step recipe',
