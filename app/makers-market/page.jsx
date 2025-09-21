@@ -69,11 +69,6 @@ function MakersMarket() {
 
   const faqs = [
     {
-      id: 1,
-      question: 'What can I expect?',
-      answer: 'Join us for an artisan market hosted by Made on Manning at our barn in Woodbury, MN. Come ready to shop for cozy fall finds and get a jump start on your holiday shopping with unique, seasonal gifts. Warm beverages and kids\' activities in the backyard will be available for everyone to enjoy!',
-    },
-    {
       id: 2,
       question: 'Where should I park?',
       answer: 'This market is located on private property. When you turn off of Manning Avenue, you are welcome to park along both sides of the driveway. The barn is located at the back of the property.',
@@ -107,12 +102,16 @@ function MakersMarket() {
         />
         <div className="makers-market-intro-text intro-text">
           <p>
-            Enjoy artisanal, handcrafted goods from a curated collection of specialty vendors and local small businesses.
-            Find custom home decore, sourdough bread, fresh baked treats, seasonal items and more. <b>Hosted by Made on Manning.</b>
+            Enjoy artisanal, handcrafted goods from a curated collection of specialty vendors and local small businesses at our barn in Woodbury, MN.
+            Find custom home decore, sourdough bread, fresh baked treats, seasonal items and more and get a jump start on your holiday shopping with unique, 
+            seasonal gifts. Warm beverages and kids&apos; activities in the backyard will be available for everyone to enjoy!
           </p>
-          <div className="event-dates">
-            <p>October 24, 2025 | 10:00 AM - 6:00 PM</p>
-            <p>October 25, 2025 | 9:00 AM - 4:00 PM</p>
+          <p>
+            October 24, 2025 | 10:00 AM - 6:00 PM<br />
+            October 25, 2025 | 9:00 AM - 4:00 PM
+          </p>
+          <div className="bold-text">
+            <p>Hosted by Made on Manning</p>
           </div>
         </div>
       </div>
