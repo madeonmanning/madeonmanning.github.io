@@ -1,10 +1,16 @@
 'use client'
 
 import React from 'react';
-import Slider from 'react-slick';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import '../globals.css';
 import './Rentals.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+const Slider = dynamic(() => import('react-slick'), {
+  ssr: false
+});
 
 function Rentals() {
   const settings = {

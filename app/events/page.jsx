@@ -51,7 +51,7 @@ function Events() {
       date: 'October 24, 2025',
       time: '10:00 AM - 6:00 PM',
       title: 'Makers Market',
-      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.<br/><br/>Additional details coming soon.',
+      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.',
       link: './makers-market',
       linkText: 'More Details'
     },
@@ -61,7 +61,7 @@ function Events() {
       date: 'October 25, 2025',
       time: '9:00 AM - 4:00 PM',
       title: 'Makers Market',
-      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.<br/><br/>Additional details coming soon.',
+      description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.',
       link: './makers-market',
       linkText: 'More Details'
     }

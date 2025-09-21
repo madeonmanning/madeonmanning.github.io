@@ -3,11 +3,8 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // This import is crucial
-import { config } from "@fortawesome/fontawesome-svg-core";
-config.autoAddCss = false; // This tells Font Awesome to not add its own CSS dynamically, as we're handling it
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import './lib/fontawesome';
 
 export const metadata = {
   title: 'Made on Manning',
@@ -51,10 +48,10 @@ export default function RootLayout({ children }) {
               <p>&copy; {new Date().getFullYear()} Made on Manning. All rights reserved.</p>
               <div className="social-links">
                 <a href="https://www.instagram.com/made_on_manning" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-                  <FontAwesomeIcon icon={faInstagram} />
+                  <FontAwesomeIcon icon={['fab', 'instagram']} />
                 </a>
                 <a href="mailto:madeonmanning@gmail.com" rel="noopener noreferrer" aria-label="Email">
-                  <FontAwesomeIcon icon={faEnvelope} />
+                  <FontAwesomeIcon icon={['fas', 'envelope']} />
                 </a>
               </div>
             </div>

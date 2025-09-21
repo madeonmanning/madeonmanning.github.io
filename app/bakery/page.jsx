@@ -2,12 +2,18 @@
 
 import React, { useState } from 'react';
 import ImageGalleryModal from '../components/ImageGalleryModal';
-import Slider from 'react-slick';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import '../lib/fontawesome';
 import '../globals.css';
 import './Bakery.css';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
+const Slider = dynamic(() => import('react-slick'), {
+  ssr: false
+});
 
 
 function Bakery() {
@@ -81,7 +87,7 @@ function Bakery() {
         <div className="category-content">
           <div className="bakery-carousel-container" style={{ position: 'relative' }}>
             <div className='open-images' onClick={() => openModal(sugar_cookie_images)}>
-              <FontAwesomeIcon icon={faUpRightFromSquare} style={{ color: 'white', fontSize: '20px' }} />
+              <FontAwesomeIcon icon="up-right-from-square" style={{ color: 'white', fontSize: '20px' }} />
             </div>
             <Slider {...settings}>
               {sugar_cookie_images.map(image => (
@@ -120,7 +126,7 @@ function Bakery() {
         <div className="category-content">
           <div className="bakery-carousel-container" style={{ position: 'relative' }}>
             <div className='open-images' onClick={() => openModal(cupcake_images)}>
-              <FontAwesomeIcon icon={faUpRightFromSquare} style={{ color: 'white', fontSize: '20px' }} />
+              <FontAwesomeIcon icon="up-right-from-square" style={{ color: 'white', fontSize: '20px' }} />
             </div>
             <Slider {...settings}>
               {cupcake_images.map(image => (
@@ -157,7 +163,7 @@ function Bakery() {
         <div className="category-content">
           <div className="bakery-carousel-container" style={{ position: 'relative' }}>
             <div className='open-images' onClick={() => openModal(bulk_baking_images)}>
-              <FontAwesomeIcon icon={faUpRightFromSquare} style={{ color: 'white', fontSize: '20px' }} />
+              <FontAwesomeIcon icon="up-right-from-square" style={{ color: 'white', fontSize: '20px' }} />
             </div>
             <Slider {...settings}>
               {bulk_baking_images.map(image => (
