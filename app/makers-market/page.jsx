@@ -18,16 +18,22 @@ function MakersMarket() {
       bio: 'Meet Katie, the one-woman maker behind Border Bluff Designs. She handcrafts everything from charcuterie boards and coasters to modern mosaics and wall décor. Each piece is made with care and creativity, bringing a unique touch of fun, seasonal style to your home.',
     },
     {
+      name: 'Burnt at Both Ends Candle Co.',
+      instagram: 'https://www.instagram.com/burntatbothendscandleco/',
+      image: '/mmvendor-burnt-at-both-ends.jpg',
+      bio: 'Burnt at Both Ends Candle Co. is a proudly woman-owned home fragrance brand dedicated to bringing calm, comfort, and character to your space. They handcraft a full line of soy candles, wax melts, room sprays, and diffusers—each product is thoughtfully designed to elevate your everyday with incredible scent.',
+    },
+    {
       name: 'Compass Pointe Goods',
       instagram: 'https://www.instagram.com/compasspointegoods/',
       image: '/mmvendor-compass-pointe-goods.jpg',
       bio: 'Christa is a home-based baker serving up a delicious assortment of goodies. From flaky scones and chewy brownies to crunchy granola and classic cookies, you\'re bound to find the perfect treat to satisfy your craving.',
     },
     {
-      name: 'Green Apron Gardens',
-      instagram: 'https://www.instagram.com/greenaprongardens/',
-      image: '/mmvendor-green-apron-gardens.jpg',
-      bio: 'Emily crafts soaps and skincare products for the whole family. Using clean, locally sourced ingredients, her beautiful creations are made with your health in mind, ensuring a gentle touch for everyone.',
+      name: 'Hedrix Homemade',
+      instagram: '#',
+      image: '/mmvendor-hedrix-homemade.jpg',
+      bio: 'Founded by Anna and her husband Jason, Hedrix Homemade creates homemade elderberry syrup using organic ingredients and local honey. As former teachers who battled \'sick season\' germs, they are passionate about helping others boost their immunity. They love sharing their favorite natural remedy with the community!',
     },
     {
       name: 'Kindred Goods',
@@ -40,6 +46,12 @@ function MakersMarket() {
       instagram: 'https://www.instagram.com/made_on_manning/',
       image: '/bulk-baking-1.jpg',
       bio: 'Made on Manning is an eclectic collection of all things homemade and handcrafted. From savory sourdough bread to warm cinnamon rolls, and from stunning textiles to beautiful pottery, Sarah loves to dabble in it all!',
+    },
+    {
+      name: 'Marshmallbos',
+      instagram: 'https://www.instagram.com/marshmallbos/',
+      image: '/mmvendor-marshmallbos.jpg',
+      bio: 'Marshmallbos is a charming business spearheaded by 13-year-old Bo, who specializes in making delicious, gourmet marshmallows. Stop by to try this family favorite for yourself, or pick up a bag for the perfect gift!',
     },
     {
       name: 'MeadowLark Design Co.',

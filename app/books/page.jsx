@@ -62,7 +62,7 @@ function Books() {
               <p>
                 <b>Pricing:</b> {item.cost}
               </p>
-              <a href={item.url} target="_blank" className="book-order-button">Order {item.name}</a>
+              <a href={item.url} target="_blank" rel="noopener" className="book-order-button">Order {item.name}</a>
             </div>
           </div>
         </section>
@@ -70,7 +70,7 @@ function Books() {
 
       <div className="inquiry-call-to-action">
         <p>Interested in ordering one or both of these books? <Link href="/contact">Contact me</Link> or visit <a href='https://madeonmanning.square.site/'>my online store</a>.</p>
-        <a href="https://madeonmanning.square.site/" target="_blank" className="main-inquiry-button">Order Here</a>
+        <a href="https://madeonmanning.square.site/" target="_blank" rel="noopener" className="main-inquiry-button">Order Here</a>
       </div>
 
     </div>
