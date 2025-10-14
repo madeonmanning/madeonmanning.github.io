@@ -1,17 +1,26 @@
+"use client";
 import Link from 'next/link';
+import { useState } from 'react';
 import { GoogleAnalytics } from '@next/third-parties/google';
 import './globals.css';
+import './components/NavMenu.css';
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // This import is crucial
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './lib/fontawesome';
-
-export const metadata = {
-  title: 'Made on Manning',
-  /*description: 'Farmstand and Bakery',*/
-};
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
 export default function RootLayout({ children }) {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <html lang="en">
       <head>  
@@ -26,16 +35,20 @@ export default function RootLayout({ children }) {
                 <img src={"/favicon-96x96.png"} alt="Made on Manning Logo" className="site-logo-image" />
                 Made on Manning
               </Link>
-              <nav className="main-nav">
+              <nav className={`main-nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
                 <ul>
-                  <li><Link href="/farmstand">Farmstand</Link></li>
-                  <li><Link href="/bakery">Bakery</Link></li>
-                  <li><Link href="/events">Events</Link></li>
-                  <li><Link href="/workshops">Workshops</Link></li>
-                  <li><Link href="/rentals">Rentals</Link></li>
-                  <li><Link href="/about">About</Link></li>
+                  <li><Link href="/farmstand" onClick={closeMobileMenu}>Farmstand</Link></li>
+                  <li><Link href="/bakery" onClick={closeMobileMenu}>Bakery</Link></li>
+                  <li><Link href="/events" onClick={closeMobileMenu}>Events</Link></li>
+                  <li><Link href="/workshops" onClick={closeMobileMenu}>Workshops</Link></li>
+                  <li><Link href="/rentals" onClick={closeMobileMenu}>Rentals</Link></li>
+                  <li><Link href="/books" onClick={closeMobileMenu}>Books</Link></li>
+                  <li><Link href="/about" onClick={closeMobileMenu}>About</Link></li>
                 </ul>
               </nav>
+              <button className="mobile-nav-toggle" onClick={toggleMobileMenu}>
+                <FontAwesomeIcon icon={isMobileMenuOpen ? faTimes : faBars} />
+              </button>
             </div>
           </header>
 

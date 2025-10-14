@@ -1,0 +1,41 @@
+/* NavMenu.css */
+
+.mobile-nav-toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  @media (max-width: 768px) {
+    nav.main-nav ul {
+      display: none;
+      position: absolute;
+      top: 70px; /* Adjust as needed */
+      left: 0;
+      width: 100%;
+      background-color: #f8f5f0; /* Match header background */
+      border-top: 1px solid #e0ddd9;
+      padding: 10px 0;
+      z-index: 999; /* Ensure it's on top */
+    }
+
+    nav.main-nav.mobile-open ul {
+        display: block;
+    }
+  
+    .mobile-nav-toggle {
+      display: block; /* Show on mobile */
+    }
+
+    nav.main-nav.mobile-open ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+  }
