@@ -5,7 +5,7 @@ import './Events.css';
 function Events() {
   // Placeholder data for events
   const events = [
-    {
+    /*{
       id: 1,
       image: '/bulk-baking-1.jpg',
       date: 'October 3, 2025',
@@ -14,7 +14,7 @@ function Events() {
       description: 'Order from a specialized menu and come pick up from my porch on October 3. Be one of the first people to get your hands on one of my new books.',
       link: 'https://forms.gle/7V1kTv2pbTfTPGrH8',
       linkText: 'Order Form'
-    },
+    },*/
     /*{
       id: 2,
       image: '/events-farmstand-peach.jpg',
