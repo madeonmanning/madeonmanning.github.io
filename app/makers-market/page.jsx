@@ -29,12 +29,12 @@ function MakersMarket() {
       image: '/mmvendor-compass-pointe-goods.jpg',
       bio: 'Christa is a home-based baker serving up a delicious assortment of goodies. From flaky scones and chewy brownies to crunchy granola and classic cookies, you\'re bound to find the perfect treat to satisfy your craving.',
     },
-    {
+    /*{
       name: 'Hedrix Homemade',
       instagram: '#',
       image: '/mmvendor-hedrix-homemade.jpg',
       bio: 'Founded by Anna and her husband Jason, Hedrix Homemade creates homemade elderberry syrup using organic ingredients and local honey. As former teachers who battled \'sick season\' germs, they are passionate about helping others boost their immunity. They love sharing their favorite natural remedy with the community!',
-    },
+    },*/
     {
       name: 'Kindred Goods',
       instagram: 'https://www.instagram.com/kindred_goods/',
