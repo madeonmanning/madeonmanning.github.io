@@ -24,6 +24,12 @@ function MakersMarket() {
       bio: 'Burnt at Both Ends Candle Co. is a proudly woman-owned home fragrance brand dedicated to bringing calm, comfort, and character to your space. They handcraft a full line of soy candles, wax melts, room sprays, and diffusers—each product is thoughtfully designed to elevate your everyday with incredible scent.',
     },
     {
+      name: 'Carved & Clay',
+      instagram: 'https://www.instagram.com/carvedandclay/',
+      image: '/mmvendor-carved-and-clay.jpg',
+      bio: 'Janessa creates all sorts of fun things for your home. Each piece is hand-shaped and carved with care, inspired by the textures of the forest and the warmth of home.',
+    },
+    {
       name: 'Compass Pointe Goods',
       instagram: 'https://www.instagram.com/compasspointegoods/',
       image: '/mmvendor-compass-pointe-goods.jpg',
@@ -67,15 +73,9 @@ function MakersMarket() {
     },
     {
       name: 'The Scented Stove',
-      instagram: '#',
+      instagram: 'https://www.instagram.com/thescentedstovemn/',
       image: '/mmvendor-the-scented-stove.jpg',
       bio: 'Mailee crafts scented simmer pots that will make your home smell amazing all day. With scents ranging from cozy fall to festive Christmas, all you need is a pot and water to fill your space with a beautiful aroma. They make the perfect gift—or a special treat for yourself!',
-    },
-    {
-      name: 'Treeative Decor',
-      instagram: 'https://www.instagram.com/treeativedecor/',
-      image: '/mmvendor-treeative-decor.jpg',
-      bio: 'Janessa creates all sorts of fun things for your home. It all started with a downed tree and a creative couple. This turned into making things like games & home decor (Advent light-up trees) hand-painted ornaments & signs.',
     },
   ];
 
