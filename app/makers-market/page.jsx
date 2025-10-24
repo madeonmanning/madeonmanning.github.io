@@ -125,6 +125,10 @@ function MakersMarket() {
           <div className="bold-text">
             <p>Hosted by Made on Manning</p>
           </div>
+          <p>
+            910 Manning Ave S<br/>
+            Woodbury, MN 55129
+          </p>
         </div>
       </div>
 
