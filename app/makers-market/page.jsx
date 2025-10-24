@@ -120,7 +120,8 @@ function MakersMarket() {
           </p>
           <p>
             October 24, 2025 | 10:00 AM - 6:00 PM<br />
-            October 25, 2025 | 9:00 AM - 4:00 PM
+            October 25, 2025 | 9:00 AM - 4:00 PM<br />
+            <i>Live bluegrass band 12PM-3PM on Saturday!</i>
           </p>
           <div className="bold-text">
             <p>Hosted by Made on Manning</p>
