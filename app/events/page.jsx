@@ -5,16 +5,26 @@ import './Events.css';
 function Events() {
   // Placeholder data for events
   const events = [
-    /*{
+    {
       id: 1,
       image: '/bulk-baking-1.jpg',
-      date: 'October 3, 2025',
+      date: 'November 26, 2025',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch on October 3. Be one of the first people to get your hands on one of my new books.',
-      link: 'https://forms.gle/7V1kTv2pbTfTPGrH8',
-      linkText: 'Order Form'
-    },*/
+      description: 'Order from a specialized menu and come pick up from my porch on November 26. Menu still being finalized and will be published in mid-November.',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
+    {
+      id: 2,
+      image: '/bulk-baking-1.jpg',
+      date: 'December 2025 (TBD)',
+      time: '9:00 AM - 5:00 PM',
+      title: 'Porch Pickup',
+      description: 'Order from a specialized menu and come pick up from my porch December. Date TBD.',
+      link: '#',
+      linkText: 'Coming Soon'
+    }
     /*{
       id: 2,
       image: '/events-farmstand-peach.jpg',
@@ -45,7 +55,7 @@ function Events() {
       link: '#',
       linkText: 'Sign Up'
     },*/
-    {
+    /*{
       id: 5,
       image: '/events-mm.jpg',
       date: 'October 24, 2025',
@@ -64,7 +74,7 @@ function Events() {
       description: 'Join us for a celebration of local artisans and unique crafts. Discover handmade goods, delicious food, and more.',
       link: './makers-market',
       linkText: 'More Details'
-    }
+    }*/
   ];
 
   return (
