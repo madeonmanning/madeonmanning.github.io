@@ -21,7 +21,7 @@ function Events() {
       date: 'December 19, 2025',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch on December 19.',
+      description: 'Order from a specialized menu and come pick up from my porch on December 19. Menu to be available early December.',
       link: '#',
       linkText: 'Coming Soon'
     },
