@@ -7,21 +7,31 @@ function Events() {
   const events = [
     {
       id: 1,
-      image: '/bulk-baking-1.jpg',
+      image: '/events-porchpickup-nov.jpg',
       date: 'November 26, 2025',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch on November 26. Menu still being finalized and will be published in mid-November.',
-      link: '#',
-      linkText: 'Coming Soon'
+      description: 'Order from a specialized menu and come pick up from my porch on November 26. Original Sourdough Bread & Baguette, Original & Pumpkin Cinnamon Rolls, Apple Hand Pies, and Sugar Cookies.',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSc-3otWDPOgUlRUf-3OGY4izpyBfuEEsXPbSzywOi0XAozBTQ/viewform?usp=publish-editor',
+      linkText: 'Order Here'
     },
     {
       id: 2,
       image: '/bulk-baking-1.jpg',
-      date: 'December 2025 (TBD)',
+      date: 'December 19, 2025',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch December. Date TBD.',
+      description: 'Order from a specialized menu and come pick up from my porch on December 19.',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
+    {
+      id: 3,
+      image: '/bulk-baking-1.jpg',
+      date: 'January 2026',
+      time: '9:00 AM - 5:00 PM',
+      title: 'Porch Pickup',
+      description: 'Order from a specialized menu and come pick up from my porch in January. Date TBD.',
       link: '#',
       linkText: 'Coming Soon'
     }
