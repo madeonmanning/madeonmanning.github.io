@@ -12,8 +12,8 @@ function Events() {
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
       description: 'Order from a specialized menu and come pick up from my porch on November 26. Original Sourdough Bread & Baguette, Original & Pumpkin Cinnamon Rolls, Apple Hand Pies, and Sugar Cookies.',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSc-3otWDPOgUlRUf-3OGY4izpyBfuEEsXPbSzywOi0XAozBTQ/viewform?usp=publish-editor',
-      linkText: 'Order Here'
+      link: '#',
+      linkText: 'Orders Full'
     },
     {
       id: 2,
