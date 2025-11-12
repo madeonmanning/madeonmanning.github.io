@@ -98,7 +98,7 @@ function Events() {
               <h3 className="event-title">{event.title}</h3>
               <p className="event-date-time">{event.date} | {event.time}</p>
               <p className="event-description" dangerouslySetInnerHTML={{ __html: event.description }}></p>
-              <a href={event.link} className="cta-button">{event.linkText}</a>
+              <a href={event.link} className={`cta-button ${event.link === '#' || event.link === '' ? 'disabled' : ''}`}>{event.linkText}</a>
             </div>
           </div>
         ))}
