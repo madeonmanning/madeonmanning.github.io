@@ -5,7 +5,7 @@ import './Events.css';
 function Events() {
   // Placeholder data for events
   const events = [
-    {
+    /*{
       id: 1,
       image: '/events-porchpickup-nov.jpg',
       date: 'November 26, 2025',
@@ -14,19 +14,29 @@ function Events() {
       description: 'Order from a specialized menu and come pick up from my porch on November 26. Original Sourdough Bread & Baguette, Original & Pumpkin Cinnamon Rolls, Apple Hand Pies, and Sugar Cookies.',
       link: '#',
       linkText: 'Orders Full'
-    },
+    },*/
     {
       id: 2,
-      image: '/bulk-baking-1.jpg',
+      image: '/events-porchpickup-dec.jpg',
       date: 'December 19, 2025',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch on December 19. Menu to be available early December.',
-      link: '#',
-      linkText: 'Coming Soon'
+      description: 'Order from a specialized menu and come pick up from my porch on December 19. Menu includes sourdough, cardamom bread, and numerous cookie options.',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfP7XIBMRJrWgT-5mQ7iiwwK37JIScekxG9B6JwRG-PeeD_6w/viewform?usp=header',
+      linkText: 'Order Here'
     },
     {
       id: 3,
+      image: '/events-porchpickup-cinnamonrolls.jpg',
+      date: 'December 24, 2025',
+      time: '9:00 AM - 4:00 PM',
+      title: 'Porch Pickup',
+      description: 'Order cinnamon rolls to come pick up from my porch on December 24 - just in time for Christmas!',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSeDIM0v8FLxI2eoDhIXdXg6fuc4zazR41uG-Un4p0LJm5SIjA/viewform?usp=header',
+      linkText: 'Order Here'
+    },
+    {
+      id: 4,
       image: '/bulk-baking-1.jpg',
       date: 'January 2026',
       time: '9:00 AM - 5:00 PM',
