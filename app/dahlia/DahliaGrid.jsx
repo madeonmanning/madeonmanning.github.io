@@ -28,10 +28,6 @@ const DahliaGrid = ({ dahlias }) => {
     setFilteredDahlias(filtered);
   }, [formFilter, sizeFilter, dahlias]);
 
-  const slugify = (name) => {
-    return name.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
-  }
-
   return (
     <div className="dahlia-container">
       <div className="dahlia-filters">

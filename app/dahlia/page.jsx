@@ -5,7 +5,7 @@ import DahliaGrid from './DahliaGrid';
 import './Dahlia.css';
 
 const DahliaPage = () => {
-  const filePath = path.join(process.cwd(), 'data', 'dahlias.csv');
+  const filePath = path.join('data', 'dahlias.csv');
   const fileContent = fs.readFileSync(filePath, 'utf8');
   const records = parse(fileContent, {
     columns: true,
