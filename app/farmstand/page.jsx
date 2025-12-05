@@ -3,6 +3,10 @@ import '../globals.css';
 import './Farmstand.css';
 import FAQItem from '../components/FAQItem';
 
+export const metadata = {
+  title: "Farmstand",
+};
+
 function Farmstand() {
 // Array of your FAQ data
   const faqs = [

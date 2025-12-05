@@ -3,6 +3,10 @@ import '../globals.css';
 import './Workshops.css';
 import Link from 'next/link';
 
+export const metadata = {
+  title: "Workshops",
+};
+
 function Workshops() {
   const workshops = [
     {

@@ -3,6 +3,10 @@ import '../globals.css';
 import './MakersMarket.css';
 import FAQItem from '../components/FAQItem';
 
+export const metadata = {
+  title: "Makers Market",
+};
+
 function MakersMarket() {
   const vendors = [
     {

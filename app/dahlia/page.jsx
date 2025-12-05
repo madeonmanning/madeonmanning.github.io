@@ -4,6 +4,10 @@ import { parse } from 'csv-parse/sync';
 import DahliaGrid from './DahliaGrid';
 import './Dahlia.css';
 
+export const metadata = {
+  title: "Dahlia",
+};
+
 const DahliaPage = () => {
   const filePath = path.join('data', 'dahlias.csv');
   const fileContent = fs.readFileSync(filePath, 'utf8');

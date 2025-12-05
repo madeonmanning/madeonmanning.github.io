@@ -2,6 +2,10 @@ import React from 'react';
 import '../globals.css';
 import './Events.css';
 
+export const metadata = {
+  title: "Events",
+};
+
 function Events() {
   // Placeholder data for events
   const events = [
