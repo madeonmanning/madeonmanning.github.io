@@ -1,11 +1,23 @@
-import { GoogleAnalytics } from '@next/third-parties/google';
+﻿import { GoogleAnalytics } from '@next/third-parties/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import './globals.css';
 
 import "@fortawesome/fontawesome-svg-core/styles.css"; // This import is crucial
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import './lib/fontawesome';
 import Header from './components/Header';
-import Link from 'next/link';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-playfair-display',
+});
 
 export const metadata = {
   title: {
@@ -17,7 +29,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${inter.variable} ${playfairDisplay.variable}`}>
       <head>  
         <link rel="icon" href="/favicon-96x96.png" type="any" />
       </head>
@@ -49,3 +61,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+

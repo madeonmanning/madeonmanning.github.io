@@ -26,8 +26,11 @@ function About() {
     dataToSend.append('_captcha', 'false'); // Disable captcha
 
     try {
-      const response = await fetch("https://formsubmit.co/443b1077a09ebce89f8950b9fb77b52d", { // Replace with your FormSubmit.co endpoint
+      const response = await fetch("https://formsubmit.co/443b1077a09ebce89f8950b9fb77b52d", { // Replace with your FormSubmit.co endpoint  //https://formsubmit.co/443b1077a09ebce89f8950b9fb77b52d
         method: "POST",
+        headers: {
+          'Accept': 'application/json',
+        },
         body: dataToSend,
       });
 
