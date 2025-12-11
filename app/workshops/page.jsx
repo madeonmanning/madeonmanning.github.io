@@ -19,13 +19,12 @@ function Workshops() {
       ],
       title: 'Sourdough Workshop',
       description: 'Now offering in-person, hands-on, beginner sourdough classes taught at my home in Woodbury, Minnesota. You can look forward to a fun and casual 2.5 hour workshop that will teach you how to feed, use, and maintain a sourdough starter in an approachable way. Then we will walk through the 4 basic steps for making sourdough bread; stretch + folds, shaping, scoring, and baking. You\'ll take home your own personal starter and a finished loaf of bread!',
-      cost: '$400',
+      cost: '$500',
       participants: 'Up to 4 participants',
       includes: [
         '2.5 hour, hands on instructions for how to create a loaf of sourdough from start to finish',
         'A jar of live/active sourdough starter for you to take home',
-        'Instructional booklet with step by step directions to follow',
-        'A packet of some tried and true sourdough recipes',
+        'Sourdough Made on Manning book, which includes step-by-step instructions and tried and true sourdough recipes',
         'A freshly baked loaf of bread'
       ]
     }
