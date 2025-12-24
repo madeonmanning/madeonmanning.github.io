@@ -19,7 +19,7 @@ function Events() {
       link: '#',
       linkText: 'Orders Full'
     },*/
-    {
+    /*{
       id: 2,
       image: '/events-porchpickup-dec.jpg',
       date: 'December 19, 2025',
@@ -28,7 +28,7 @@ function Events() {
       description: 'Order from a specialized menu and come pick up from my porch on December 19. Menu includes sourdough, cardamom bread, and numerous cookie options.',
       link: '#',
       linkText: 'Ordering Closed'
-    },
+    },*/
     {
       id: 3,
       image: '/events-porchpickup-cinnamonrolls.jpg',
@@ -36,8 +36,8 @@ function Events() {
       time: '9:00 AM - 4:00 PM',
       title: 'Porch Pickup',
       description: 'Order cinnamon rolls to come pick up from my porch on December 24 - just in time for Christmas!',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSeDIM0v8FLxI2eoDhIXdXg6fuc4zazR41uG-Un4p0LJm5SIjA/viewform?usp=header',
-      linkText: 'Order Here'
+      link: '#',
+      linkText: 'Ordering Closed'
     },
     {
       id: 4,
