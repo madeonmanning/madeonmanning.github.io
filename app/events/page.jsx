@@ -28,7 +28,7 @@ function Events() {
       description: 'Order from a specialized menu and come pick up from my porch on December 19. Menu includes sourdough, cardamom bread, and numerous cookie options.',
       link: '#',
       linkText: 'Ordering Closed'
-    },*/
+    },
     {
       id: 3,
       image: '/events-porchpickup-cinnamonrolls.jpg',
@@ -38,14 +38,24 @@ function Events() {
       description: 'Order cinnamon rolls to come pick up from my porch on December 24 - just in time for Christmas!',
       link: '#',
       linkText: 'Ordering Closed'
-    },
+    },*/
     {
-      id: 4,
+      id: 1,
       image: '/bulk-baking-1.jpg',
-      date: 'January 2026',
+      date: 'January 23, 2026',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch in January. Date TBD.',
+      description: 'Order from a specialized menu and come pick up from my porch in January. Menu TBD.',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
+    {
+      id: 2,
+      image: '/bulk-baking-1.jpg',
+      date: 'February 2026',
+      time: '9:00 AM - 5:00 PM',
+      title: 'Porch Pickup',
+      description: 'Order from a specialized menu and come pick up from my porch in February. Date TBD.',
       link: '#',
       linkText: 'Coming Soon'
     }
