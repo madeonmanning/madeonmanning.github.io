@@ -112,7 +112,7 @@ function Bakery() {
               <li>Special Events</li>
             </ul>
             <p>
-              <b>Pricing:</b> Starts at $3 per cookie. Minimum order of 12 cookies per design.
+              <b>Pricing:</b> Starts at $4 per cookie. Minimum order of 12 cookies per design.
               Cookies are approximately 3 inches in diameter with a maximum of 3 colors per cookie.
               Larger cookies or more colors available, but may result in price increase.
             </p>
