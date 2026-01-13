@@ -41,13 +41,13 @@ function Events() {
     },*/
     {
       id: 1,
-      image: '/bulk-baking-1.jpg',
+      image: '/events-porchpickup-jan.jpg',
       date: 'January 23, 2026',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch in January. Menu TBD.',
-      link: '#',
-      linkText: 'Coming Soon'
+      description: 'Order from a specialized menu and come pick up from my porch on January 23. Menu: numerous flavors of sourdough bread and bagels!',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSeJC8TDgAiJBepC2qdfjPrk_Q7y7dqfNLke5zgdAtWTOKxF6g/viewform?usp=header',
+      linkText: 'Order Here'
     },
     {
       id: 2,
