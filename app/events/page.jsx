@@ -46,8 +46,8 @@ function Events() {
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
       description: 'Order from a specialized menu and come pick up from my porch on January 23. Menu: numerous flavors of sourdough bread and bagels!',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSeJC8TDgAiJBepC2qdfjPrk_Q7y7dqfNLke5zgdAtWTOKxF6g/viewform?usp=header',
-      linkText: 'Order Here'
+      link: '#',
+      linkText: 'Orders Full'
     },
     {
       id: 2,
