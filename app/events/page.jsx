@@ -39,7 +39,7 @@ function Events() {
       link: '#',
       linkText: 'Ordering Closed'
     },*/
-    {
+    /*{
       id: 1,
       image: '/events-porchpickup-jan.jpg',
       date: 'January 23, 2026',
@@ -48,14 +48,24 @@ function Events() {
       description: 'Order from a specialized menu and come pick up from my porch on January 23. Menu: numerous flavors of sourdough bread and bagels!',
       link: '#',
       linkText: 'Orders Full'
-    },
+    },*/
     {
       id: 2,
       image: '/bulk-baking-1.jpg',
-      date: 'February 2026',
+      date: 'March 6, 2026',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch in February. Date TBD.',
+      description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
+    {
+      id: 3,
+      image: '/bulk-baking-1.jpg',
+      date: 'March 27, 2026',
+      time: '9:00 AM - 5:00 PM',
+      title: 'Porch Pickup',
+      description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
       link: '#',
       linkText: 'Coming Soon'
     }
