@@ -55,9 +55,9 @@ function Events() {
       date: 'March 6, 2026',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
-      link: '#',
-      linkText: 'Coming Soon'
+      description: 'Order from a specialized menu and come pick up from my porch on March 6. Proceeds from this porch pickup will go toward purchasing items for NICU gift baskets. Menu: Sourdough Bread & Raspberry Hand Pies.',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSd-RvdkP0EB-d6SmCycdH9qXOKMEJU4GbaW9p4QZWHM9-Ej3A/viewform?usp=publish-editor',
+      linkText: 'Order Here'
     },
     {
       id: 3,
