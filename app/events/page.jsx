@@ -50,19 +50,19 @@ function Events() {
       linkText: 'Orders Full'
     },*/
     {
-      id: 2,
-      image: '/bulk-baking-1.jpg',
-      date: 'March 6, 2026',
-      time: '9:00 AM - 5:00 PM',
-      title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch on March 6. Proceeds from this porch pickup will go toward purchasing items for NICU gift baskets. Menu: Sourdough Bread & Raspberry Hand Pies.',
-      link: '#',
-      linkText: 'Orders Closed'
-    },
-    {
       id: 3,
       image: '/bulk-baking-1.jpg',
       date: 'March 27, 2026',
+      time: '9:00 AM - 5:00 PM',
+      title: 'Porch Pickup',
+      description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
+    {
+      id: 4,
+      image: '/bulk-baking-1.jpg',
+      date: 'April 2026',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
       description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
