@@ -76,7 +76,18 @@
 
 .dahlia-info h3 {
     font-size: 1.25rem;
+    margin: 0;
+}
+
+.dahlia-info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 0.5rem;
+}
+
+.mom-original-icon {
+    object-fit: contain;
 }
 
 .dahlia-info p {
