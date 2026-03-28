@@ -18,37 +18,7 @@ function Events() {
       description: 'Order from a specialized menu and come pick up from my porch on November 26. Original Sourdough Bread & Baguette, Original & Pumpkin Cinnamon Rolls, Apple Hand Pies, and Sugar Cookies.',
       link: '#',
       linkText: 'Orders Full'
-    },*/
-    /*{
-      id: 2,
-      image: '/events-porchpickup-dec.jpg',
-      date: 'December 19, 2025',
-      time: '9:00 AM - 5:00 PM',
-      title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch on December 19. Menu includes sourdough, cardamom bread, and numerous cookie options.',
-      link: '#',
-      linkText: 'Ordering Closed'
     },
-    {
-      id: 3,
-      image: '/events-porchpickup-cinnamonrolls.jpg',
-      date: 'December 24, 2025',
-      time: '9:00 AM - 4:00 PM',
-      title: 'Porch Pickup',
-      description: 'Order cinnamon rolls to come pick up from my porch on December 24 - just in time for Christmas!',
-      link: '#',
-      linkText: 'Ordering Closed'
-    },*/
-    /*{
-      id: 1,
-      image: '/events-porchpickup-jan.jpg',
-      date: 'January 23, 2026',
-      time: '9:00 AM - 5:00 PM',
-      title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch on January 23. Menu: numerous flavors of sourdough bread and bagels!',
-      link: '#',
-      linkText: 'Orders Full'
-    },*/
     {
       id: 3,
       image: '/bulk-baking-1.jpg',
@@ -58,11 +28,21 @@ function Events() {
       description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
       link: '#',
       linkText: 'Coming Soon'
+    },*/
+    {
+      id: 1,
+      image: '/events-easter.jpg',
+      date: 'April 4, 2026',
+      time: '9:00 AM - 5:00 PM',
+      title: 'Porch Pickup',
+      description: 'Order from a specialized menu and come pick up from my porch: Easter Theme!',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfscqwhMuPCEtnXyottjcu_S4WwmEGtK_Fk-w1AligFT1PD6g/viewform?usp=header',
+      linkText: 'Order Here'
     },
     {
-      id: 4,
+      id: 3,
       image: '/bulk-baking-1.jpg',
-      date: 'April 2026',
+      date: 'May 15, 2026',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
       description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
