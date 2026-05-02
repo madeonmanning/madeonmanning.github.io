@@ -9,56 +9,46 @@ export const metadata = {
 function Events() {
   // Placeholder data for events
   const events = [
-    /*{
-      id: 1,
-      image: '/events-porchpickup-nov.jpg',
-      date: 'November 26, 2025',
-      time: '9:00 AM - 5:00 PM',
-      title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch on November 26. Original Sourdough Bread & Baguette, Original & Pumpkin Cinnamon Rolls, Apple Hand Pies, and Sugar Cookies.',
-      link: '#',
-      linkText: 'Orders Full'
-    },
-    {
-      id: 3,
-      image: '/bulk-baking-1.jpg',
-      date: 'March 27, 2026',
-      time: '9:00 AM - 5:00 PM',
-      title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
-      link: '#',
-      linkText: 'Coming Soon'
-    },*/
     {
       id: 1,
-      image: '/events-easter.jpg',
-      date: 'April 4, 2026',
-      time: '9:00 AM - 5:00 PM',
-      title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch: Easter Theme!',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSfscqwhMuPCEtnXyottjcu_S4WwmEGtK_Fk-w1AligFT1PD6g/viewform?usp=header',
-      linkText: 'Order Here'
-    },
-    {
-      id: 3,
-      image: '/bulk-baking-1.jpg',
+      image: '/events-porchpickup-may.jpg',
       date: 'May 15, 2026',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch. Menu TBD.',
-      link: '#',
-      linkText: 'Coming Soon'
-    }
-    /*{
+      description: 'Order from a specialized menu and come pick up from my porch. Menu: ',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSefjyU6t8VX1dVBcWT9sNRTbxQj8g06JRwwXfJIKtTEnuYvmg/viewform?usp=publish-editor',
+      linkText: 'Order Here'
+    },
+    {
       id: 2,
-      image: '/events-farmstand-peach.jpg',
-      date: 'August 22, 2025',
+      image: '/bulk-baking-1.jpg',
+      date: 'June 5, 2026',
       time: '9:00 AM',
-      title: 'Farmstand - Peaches',
-      description: 'Come to the farmstand this Friday for peach-themed bakes: Peach Jam, Peach Handpies, Peach Cinnamon Rolls, and more!',
+      title: 'Farmstand - Kickoff',
+      description: 'Come to the farmstand this Friday for the kickoff to my weekly farmstand!',
       link: './farmstand',
       linkText: 'Farmstand Details'
-    },*/
+    },
+    {
+      id: 3,
+      image: '/bulk-baking-1.jpg',
+      date: 'June 12, 2026',
+      time: '9:00 AM',
+      title: 'Farmstand',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
+    },
+    {
+      id: 4,
+      image: '/bulk-baking-1.jpg',
+      date: 'June 19, 2026',
+      time: '9:00 AM',
+      title: 'Farmstand',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
+    },
     /*{
       id: 3,
       image: '/events-farmstand-apples.jpg',
