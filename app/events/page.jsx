@@ -15,9 +15,9 @@ function Events() {
       date: 'May 15, 2026',
       time: '9:00 AM - 5:00 PM',
       title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch. Menu: ',
-      link: 'https://docs.google.com/forms/d/e/1FAIpQLSefjyU6t8VX1dVBcWT9sNRTbxQj8g06JRwwXfJIKtTEnuYvmg/viewform?usp=publish-editor',
-      linkText: 'Order Here'
+      description: 'Order from a specialized menu and come pick up from my porch.',
+      link: '#',
+      linkText: 'Orders Full'
     },
     {
       id: 2,
