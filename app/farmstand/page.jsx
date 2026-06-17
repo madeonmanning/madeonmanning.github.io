@@ -73,9 +73,6 @@ function Farmstand() {
           className="farmstand-intro-image hero-image"
         />
         <div className="farmstand-intro-text intro-text">
-          <p className="farmstand-announce">
-            The first weekly farmstand of 2026 will be June 5!
-          </p>
           <p>
             During the summer months of June through September join us at our home on Manning Avenue South in
             Woodbury, MN, for a delightful selection of homemade sourdough, fresh baked goods, and seasonal flowers.
