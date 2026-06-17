@@ -10,29 +10,19 @@ function Events() {
   // Placeholder data for events
   const events = [
     {
-      id: 1,
-      image: '/events-porchpickup-may.jpg',
-      date: 'May 15, 2026',
-      time: '9:00 AM - 5:00 PM',
-      title: 'Porch Pickup',
-      description: 'Order from a specialized menu and come pick up from my porch.',
-      link: '#',
-      linkText: 'Orders Full'
-    },
-    {
-      id: 2,
-      image: '/bulk-baking-1.jpg',
-      date: 'June 5, 2026',
+      id: 4,
+      image: '/events-farmstand-strawberry.jpg',
+      date: 'June 19, 2026',
       time: '9:00 AM',
-      title: 'Farmstand - Kickoff',
-      description: 'Come to the farmstand this Friday for the kickoff to my weekly farmstand!',
+      title: 'Farmstand',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! Theme: Strawberry!',
       link: './farmstand',
       linkText: 'Farmstand Details'
     },
     {
-      id: 3,
+      id: 5,
       image: '/bulk-baking-1.jpg',
-      date: 'June 12, 2026',
+      date: 'June 26, 2026',
       time: '9:00 AM',
       title: 'Farmstand',
       description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
@@ -40,9 +30,39 @@ function Events() {
       linkText: 'Farmstand Details'
     },
     {
-      id: 4,
+      id: 6,
       image: '/bulk-baking-1.jpg',
-      date: 'June 19, 2026',
+      date: 'July 3, 2026',
+      time: '9:00 AM',
+      title: 'Farmstand',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
+    },
+    {
+      id: 7,
+      image: '/bulk-baking-1.jpg',
+      date: 'July 10, 2026',
+      time: '9:00 AM',
+      title: 'Farmstand',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
+    },
+    {
+      id: 8,
+      image: '/bulk-baking-1.jpg',
+      date: 'July 17, 2026',
+      time: '9:00 AM',
+      title: 'Farmstand',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
+    },
+    {
+      id: 9,
+      image: '/bulk-baking-1.jpg',
+      date: 'July 24, 2026',
       time: '9:00 AM',
       title: 'Farmstand',
       description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
