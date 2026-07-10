@@ -9,7 +9,7 @@ export const metadata = {
 function Events() {
   // Placeholder data for events
   const events = [
-        {
+       /* {
       id: 1,
       image: '/events-farmstand-redwhiteblue.jpg',
       date: 'July 3, 2026',
@@ -18,7 +18,7 @@ function Events() {
       description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! Red, White, & Blue theme!',
       link: './farmstand',
       linkText: 'Farmstand Details'
-    },
+    },*/
     {
       id: 2,
       image: '/bulk-baking-1.jpg',
