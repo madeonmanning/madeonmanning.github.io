@@ -19,7 +19,7 @@ function Events() {
       link: './farmstand',
       linkText: 'Farmstand Details'
     },*/
-    {
+    /*{
       id: 2,
       image: '/bulk-baking-1.jpg',
       date: 'July 17, 2026',
@@ -28,7 +28,7 @@ function Events() {
       description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! Raspberry week!',
       link: './farmstand',
       linkText: 'Farmstand Details'
-    },
+    },*/
     {
       id: 3,
       image: '/bulk-baking-1.jpg',
