@@ -9,29 +9,9 @@ export const metadata = {
 function Events() {
   // Placeholder data for events
   const events = [
-       /* {
-      id: 1,
-      image: '/events-farmstand-redwhiteblue.jpg',
-      date: 'July 3, 2026',
-      time: '9:00 AM',
-      title: 'Farmstand - Red, White, & Blue',
-      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! Red, White, & Blue theme!',
-      link: './farmstand',
-      linkText: 'Farmstand Details'
-    },*/
-    /*{
-      id: 2,
-      image: '/bulk-baking-1.jpg',
-      date: 'July 17, 2026',
-      time: '9:00 AM',
-      title: 'Farmstand - Raspberry',
-      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! Raspberry week!',
-      link: './farmstand',
-      linkText: 'Farmstand Details'
-    },*/
     {
-      id: 3,
-      image: '/bulk-baking-1.jpg',
+      id: 1,
+      image: '/events-farmstand-blueberry.jpg',
       date: 'July 31, 2026',
       time: '9:00 AM',
       title: 'Farmstand - Blueberry',
@@ -40,55 +20,65 @@ function Events() {
       linkText: 'Farmstand Details'
     },
     {
-      id: 4,
-      image: '/bulk-baking-1.jpg',
-      date: 'August 7, 2026',
+      id: 2,
+      image: '/events-farmstand-peach.jpg',
+      date: 'August 14, 2026',
       time: '9:00 AM',
-      title: 'Farmstand',
-      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
+      title: 'Farmstand - Peach',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! Peach week!',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
+    },
+    {
+      id: 3,
+      image: '/bulk-baking-1.jpg',
+      date: 'August 28, 2026',
+      time: '9:00 AM',
+      title: 'Farmstand - "State Fair"',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! State Fair theme week!',
+      link: './farmstand',
+      linkText: 'Farmstand Details'
+    },
+    {
+      id: 4,
+      image: '/events-farmstand-apple.jpg',
+      date: 'September 11, 2026',
+      time: '9:00 AM',
+      title: 'Farmstand - Apple',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! Apple week!',
       link: './farmstand',
       linkText: 'Farmstand Details'
     },
     {
       id: 5,
-      image: '/bulk-baking-1.jpg',
-      date: 'August 14, 2026',
+      image: '/events-porchpickup.jpg',
+      date: 'September 25, 2026',
       time: '9:00 AM',
-      title: 'Farmstand',
-      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
-      link: './farmstand',
-      linkText: 'Farmstand Details'
+      title: 'Porch Pickup',
+      description: 'Order in advance and pick up fresh baked goods from my porch.',
+      link: '#',
+      linkText: 'Coming Soon'
     },
     {
       id: 6,
       image: '/bulk-baking-1.jpg',
-      date: 'August 21, 2026',
+      date: 'October 9, 2026',
       time: '9:00 AM',
-      title: 'Farmstand',
-      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
+      title: 'Farmstand - Pumpkin',
+      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! Pumpkin week!',
       link: './farmstand',
       linkText: 'Farmstand Details'
     },
     {
       id: 7,
-      image: '/bulk-baking-1.jpg',
-      date: 'August 28, 2026',
+      image: '/events-porchpickup.jpg',
+      date: 'October 23, 2026',
       time: '9:00 AM',
-      title: 'Farmstand',
-      description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets!',
-      link: './farmstand',
-      linkText: 'Farmstand Details'
+      title: 'Porch Pickup',
+      description: 'Order in advance and pick up fresh baked goods from my porch.',
+      link: '#',
+      linkText: 'Coming Soon'
     }
-    /*{
-      id: 3,
-      image: '/events-farmstand-apples.jpg',
-      date: 'August 29, 2025',
-      time: '9:00 AM',
-      title: 'Farmstand - Apples',
-      description: 'Come to the farmstand this Friday for a preview to fall with an apple-themed week: Apple Butter, Mini Apple Bundt Cakes, Apple Cinnamon Sourdough, Caramel Apple Cinnamon Rolls, and more!',
-      link: './farmstand',
-      linkText: 'Farmstand Details'
-    },*/
     /*{
       id: 4,
       image: '/events-flowers.jpg',
