@@ -37,7 +37,7 @@ function Events() {
       description: 'Weekly farmstand including fresh baked goods, jams, and fresh flower bouquets! State Fair theme week!',
       link: './farmstand',
       linkText: 'Farmstand Details'
-    },*/
+    },
 
     {
       id: 5,
@@ -48,11 +48,21 @@ function Events() {
       description: 'Order in advance and pick up fresh baked goods from my porch.',
       link: '#',
       linkText: 'Coming Soon'
+    },*/
+    {
+      id: 1,
+      image: '/events-porchpickup.jpg',
+      date: 'October 30, 2026',
+      time: '9:00 AM',
+      title: 'Porch Pickup',
+      description: 'Order in advance and pick up fresh baked goods from my porch.',
+      link: '#',
+      linkText: 'Coming Soon'
     },
     {
-      id: 7,
+      id: 2,
       image: '/events-porchpickup.jpg',
-      date: 'October 23, 2026',
+      date: 'November 25, 2026',
       time: '9:00 AM',
       title: 'Porch Pickup',
       description: 'Order in advance and pick up fresh baked goods from my porch.',

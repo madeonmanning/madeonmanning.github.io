@@ -182,7 +182,7 @@ function Bakery() {
               Example bulk orders:
             </p>
             <ul>
-              <li>5+ loaves of sourdough bread</li>
+              <li>10+ loaves of sourdough bread</li>
               <li>Sourdough bread bowls</li>
               <li>Scones by the dozen</li>
             </ul>
