@@ -51,13 +51,13 @@ function Events() {
     },*/
     {
       id: 1,
-      image: '/events-porchpickup.jpg',
+      image: '/events-porchpickup-oct.jpg',
       date: 'October 30, 2026',
       time: '9:00 AM',
-      title: 'Porch Pickup',
+      title: 'Porch Pickup - Pumpkin',
       description: 'Order in advance and pick up fresh baked goods from my porch.',
-      link: '#',
-      linkText: 'Coming Soon'
+      link: 'https://form.jotform.com/262878492731066',
+      linkText: 'Order Here'
     },
     {
       id: 2,
