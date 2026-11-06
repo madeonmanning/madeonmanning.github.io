@@ -49,7 +49,7 @@ function Events() {
       link: '#',
       linkText: 'Coming Soon'
     },*/
-    {
+    /*{
       id: 1,
       image: '/events-porchpickup-oct.jpg',
       date: 'October 30, 2026',
@@ -58,7 +58,7 @@ function Events() {
       description: 'Order in advance and pick up fresh baked goods from my porch.',
       link: 'https://form.jotform.com/262878492731066',
       linkText: 'Order Here'
-    },
+    },*/
     {
       id: 2,
       image: '/events-porchpickup.jpg',
@@ -68,7 +68,47 @@ function Events() {
       description: 'Order in advance and pick up fresh baked goods from my porch.',
       link: '#',
       linkText: 'Coming Soon'
-    }
+    },
+    {
+      id: 3,
+      image: '/bulk-baking-1.jpg',
+      date: 'November 29, 2026',
+      time: '9:00 AM',
+      title: 'Small Business Saturday Special Event',
+      description: 'More info coming soon',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
+    {
+      id: 4,
+      image: '/events-porchpickup.jpg',
+      date: 'December 11, 2026',
+      time: '9:00 AM',
+      title: 'Cookie Pickup',
+      description: 'More info coming soon.',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
+    {
+      id: 5,
+      image: '/events-porchpickup.jpg',
+      date: 'December 21, 2026',
+      time: '9:00 AM',
+      title: 'Cookie Pickup',
+      description: 'More info coming soon.',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
+    {
+      id: 6,
+      image: '/events-porchpickup.jpg',
+      date: 'December 24, 2026',
+      time: '9:00 AM',
+      title: 'Cinnamon Roll Pickup',
+      description: 'Order in advance and pick up fresh-baked cinnamona rolls for your holiday event(s).',
+      link: '#',
+      linkText: 'Coming Soon'
+    },
     /*{
       id: 4,
       image: '/events-flowers.jpg',
