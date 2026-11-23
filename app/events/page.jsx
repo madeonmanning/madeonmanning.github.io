@@ -61,43 +61,43 @@ function Events() {
     },*/
     {
       id: 2,
-      image: '/events-porchpickup.jpg',
+      image: '/events-porchpickup-nov.jpg',
       date: 'November 25, 2026',
       time: '9:00 AM',
-      title: 'Porch Pickup',
+      title: 'Thanksgiving Porch Pickup',
       description: 'Order in advance and pick up fresh baked goods from my porch.',
       link: '#',
-      linkText: 'Coming Soon'
+      linkText: 'Ordering Closed'
     },
     {
       id: 3,
-      image: '/bulk-baking-1.jpg',
-      date: 'November 29, 2026',
+      image: '/events-porchpickup-novsbs.jpg',
+      date: 'November 28, 2026',
       time: '9:00 AM',
-      title: 'Small Business Saturday Special Event',
-      description: 'More info coming soon',
-      link: '#',
-      linkText: 'Coming Soon'
+      title: 'Small Business Saturday',
+      description: 'Celebrate Small Business Saturday by shopping local from home!',
+      link: 'https://madeonmanning.square.site/',
+      linkText: 'Order Here'
     },
     {
       id: 4,
-      image: '/events-porchpickup.jpg',
+      image: '/events-porchpickup-deccookies.jpg',
       date: 'December 11, 2026',
       time: '9:00 AM',
-      title: 'Cookie Pickup',
-      description: 'More info coming soon.',
-      link: '#',
-      linkText: 'Coming Soon'
+      title: 'Cookie Box Pickup',
+      description: 'Whether you are hosting a holiday gathering, gifting to friends and neighbors, or just treating your own family, these boxes are packed with handcrafted seasonal favorites.',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdIi9K0BKECQ9f_arif9UYa-ESkEKBjo-j4BY4BTnVl3vz4Nw/viewform',
+      linkText: 'Order Here'
     },
     {
       id: 5,
-      image: '/events-porchpickup.jpg',
+      image: '/events-porchpickup-deccookies.jpg',
       date: 'December 21, 2026',
       time: '9:00 AM',
-      title: 'Cookie Pickup',
-      description: 'More info coming soon.',
-      link: '#',
-      linkText: 'Coming Soon'
+      title: 'Cookie Box Pickup',
+      description: 'Whether you are hosting a holiday gathering, gifting to friends and neighbors, or just treating your own family, these boxes are packed with handcrafted seasonal favorites.',
+      link: 'https://docs.google.com/forms/d/e/1FAIpQLSdIi9K0BKECQ9f_arif9UYa-ESkEKBjo-j4BY4BTnVl3vz4Nw/viewform',
+      linkText: 'Order Here'
     },
     {
       id: 6,
